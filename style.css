@@ -362,21 +362,21 @@ form label[for="drawing-audit"] span {
 }
 form input[type="email"],
 form input[type="tel"] {
-  text-align: center;
-  margin-bottom: 35px;
+  margin-bottom: 15px;
+  border-radius: 10px;
   width: 100%;
 }
 @media screen and (max-width: 770px) {
   form input[type="email"],
   form input[type="tel"] {
-    height: 65px;
+    height: 5px;
   }
 }
 @media screen and (max-width: 575px) {
   form input[type="email"],
   form input[type="tel"] {
     font-size: 14px;
-    height: 60px;
+    height: 40px;
   }
   form input[type="email"]::-webkit-input-placeholder,
   form input[type="tel"]::-webkit-input-placeholder {
@@ -473,7 +473,7 @@ form label[for="agreement-audit"] {
   line-height: 15px;
   font-family: "Montserrat", sans-serif;
   color: #ffffff;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 @media screen and (max-width: 575px) {
   form .wpcf7-list-item-label,
@@ -1094,6 +1094,10 @@ select::placeholder {
 }
 .types-of-work {
   padding-left: 0;
+}
+.container{
+  max-width: 1140px;
+  margin: 0 auto;
 }
 .main {
   position: relative;
@@ -3741,13 +3745,31 @@ select::placeholder {
   margin-right: auto;
 }
 .audit-benefits {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  margin-bottom: 100px;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-rows: 150px  150px  150px;
+  align-items: center;
+  gap: 20px;
+}
+.audit__wrappers{
+  backdrop-filter:blur(4px);
+  padding: 20px;
+}
+.aud_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.audit-benefits {
+  /* background: url('./article1.jpg'); */
+}
+
+.audit {
+  background-size: cover;
+  backdrop-filter: blur(4px);
+  background: url('./bg-min.jpg');
+  background-repeat: no-repeat;
 }
 @media screen and (max-width: 1020px) {
   .audit-benefits {
@@ -3766,8 +3788,7 @@ select::placeholder {
   }
 }
 .audit-benefits__item {
-  width: calc(33.333% - 25px);
-  margin-right: 25px;
+  border-radius: 10px;
   background-color: #1d1d1d;
   padding: 30px 27px 30px 30px;
   display: -webkit-box;
@@ -3857,10 +3878,13 @@ select::placeholder {
 }
 
 .audit-form form {
-  background-color: #fff;
+  background-color: transparent;
 }
 .audit-form p {
   color: #1d1d1d;
+}
+textarea{
+  border-radius: 10px;
 }
 .audit-form label[for="drawing-audit"] {
   background-color: #979797;
