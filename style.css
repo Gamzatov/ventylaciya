@@ -207,7 +207,7 @@ body._lock {
 
 section,
 .package-way {
-  padding: 100px 0;
+  padding: 30px 0;
 }
 @media screen and (max-width: 1020px) {
   section,
@@ -1097,6 +1097,7 @@ select::placeholder {
 }
 .main {
   position: relative;
+  height: 100vh;
   background-repeat: no-repeat;
   background-position: 100% 0;
   background-size: cover;
@@ -2446,16 +2447,40 @@ select::placeholder {
   transition: all 0.3s ease;
 }
 .economy__warning{
-  background-color: orange;
+  background-color: rgb(249, 195, 95);
   text-align: center;
   color: #fff;
   padding: 10px;
 }
-.package-list__item:hover .package-list__info {
+.package-list__item:hover .project {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-
+  background-image: url('./assets/img/proj.jpg');
+	background-size: cover !important;
+	background-position: center;
 }
+.package-list__item:hover .montage {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background-size: cover !important;
+	background-position: center;
+  background: url('./assets/img/montage.png');
+}
+.package-list__item:hover .vent {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background-size: cover !important;
+	background-position: center;
+  background: url('./assets/img/vent.png');
+}
+.package-list__item:hover .allIn {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background-size: cover !important;
+	background-position: center;
+  background: url('./assets/img/allin.jpg');
+}
+
 .package-list__item:hover .package-list__info .package-list__label svg path {
   fill: #fff;
 }
@@ -2469,7 +2494,12 @@ select::placeholder {
 .package-list__item:hover .package-list__btn__arrow {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  background-color: #00afef;
+  background: linear-gradient(
+    90deg,
+    rgba(14, 174, 212, 1) 0%,
+    rgba(61, 132, 226, 1) 30%,
+    rgba(202, 22, 255, 1) 100%
+  );
 }
 @media screen and (min-width: 1020px) {
   .package-list__item {
@@ -2708,6 +2738,8 @@ select::placeholder {
   transition: -webkit-transform 0.2s ease 0.75s;
   transition: transform 0.2s ease 0.75s;
   transition: transform 0.2s ease 0.75s, -webkit-transform 0.2s ease 0.75s;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 .package-list__item__black {
   cursor: pointer;
