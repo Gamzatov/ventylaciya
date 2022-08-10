@@ -3829,7 +3829,37 @@ select::placeholder {
   margin-right: 0;
 }
 .audit-benefits__item:hover {
-  background-color: #00afef;
+  background: linear-gradient(
+    90deg,
+    rgba(14, 174, 212, 1) 0%,
+    rgba(61, 132, 226, 1) 30%,
+    rgba(202, 22, 255, 1) 100%
+  );
+}
+div.textContent {
+  display: none
+}
+
+.text_grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+}
+@media(max-width:762px){
+  .aud_grid{
+    grid-template-columns: 1fr;
+  }
+  .audit-benefits__item{
+    width: 100%;
+    margin:  0 auto;
+  }
+  .audit{
+    background-repeat: repeat;
+  }
+}
+#textMessage {
+  font-size: 48px;
+
 }
 .audit-benefits__check {
   -webkit-box-flex: 0;
@@ -3907,8 +3937,14 @@ textarea{
   color: #1d1d1d;
 }
 .audit-form input[type="submit"]:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(14, 174, 212, 1) 0%,
+    rgba(61, 132, 226, 1) 30%,
+    rgba(202, 22, 255, 1) 100%
+  );
   color: #fff;
-  border: 1px solid #fff;
+  border: none;
 }
 
 .footer {
