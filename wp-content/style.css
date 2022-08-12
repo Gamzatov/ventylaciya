@@ -3907,7 +3907,7 @@ select::placeholder {
 .audit {
   background-size: cover;
   backdrop-filter: blur(4px);
-  background: url("./bg-min.jpg");
+  /* background: url("./bg-min.jpg"); */
   background-repeat: no-repeat;
 }
 @media screen and (max-width: 1020px) {
@@ -4460,7 +4460,7 @@ textarea {
   cursor: auto;
   font-family: "Montserrat", sans-serif;
   padding: 60px 0;
-  background-image: url(../../uploads/2022/06/banner1-bg.png);
+  /* background-image: url(../../uploads/2022/06/banner1-bg.png); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -4783,7 +4783,7 @@ textarea {
   cursor: auto;
   font-family: "Montserrat", sans-serif;
   padding: 35px 0;
-  background-image: url(../../uploads/2022/06/banner3-bg-v2.png);
+  /* background-image: url(../../uploads/2022/06/banner3-bg-v2.png); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
