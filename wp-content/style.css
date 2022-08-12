@@ -2816,8 +2816,8 @@ select::placeholder {
   background-color: #5A6988;
   position: relative;
   z-index: 2;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  /* border-bottom-left-radius: 10px; */
+  /* border-bottom-right-radius: 10px; */
 }
 .package-list__btn__body p {
   cursor: pointer;
