@@ -1502,12 +1502,6 @@ select::placeholder {
 .main_icon {
   padding-right: 20px;
   font-size: 28px;
-  background: linear-gradient(
-    90deg,
-    rgba(166, 199, 20, 1) 0%,
-    rgba(141, 183, 39, 1) 30%,
-    rgba(7, 135, 61, 1) 100%
-  );
 }
 @media screen and (max-width: 870px) {
   .types-of-work__item p {
