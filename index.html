@@ -404,17 +404,19 @@
 				justify-content: space-between;
 
 			}
-			.text_grid > h2{
+
+			.text_grid>h2 {
 				text-align: center;
 			}
-			@media(max-width:762px){
-				.text_grid > h2{
+
+			@media(max-width:762px) {
+				.text_grid>h2 {
 					text-align: left;
 				}
 			}
 		</style>
 
-		<div class="_container main__container top_header" >
+		<div class="_container main__container top_header">
 			<div class="main__subtitle wow fadeInLeft text_grid">
 				<h2 style="color:#fff;">Єффективні кліматичні рішення <br> для комфорту та
 					затишку <br> вашого простору <br>
@@ -497,6 +499,33 @@
 						2900+ встановленого обладнання
 					</h3>
 				</div>
+				
+				<style type="text/css">
+					.marquee {
+					   width: 100%;
+					   margin: 0 auto;
+					   font-size:26px;
+					   color:#fff;
+					   white-space: nowrap;
+					   overflow: hidden;
+					   border-radius:4px;
+					}
+					
+					.marquee p {
+					   display: inline-block;
+					   padding-left: 100%;
+					   animation: marquee 20s linear infinite;
+					}
+					
+					.marquee p:hover {
+					   animation-play-state: paused;
+					}
+					
+					@keyframes marquee {
+					 0%   { transform: translate(0, 0); }
+					 100% { transform: translate(-100%, 0); }
+					}
+					</style>
 				<style>
 					.sub_grid {
 						display: flex;
@@ -528,7 +557,7 @@
 			</style>
 		</div>
 	</section>
-	<section class="set-task" >
+	<section class="set-task">
 		<div class="set-task__bg skrollable skrollable-between" data-top-bottom="transform: translateY(10px);"
 			data-bottom-top="transform: translateY(-50px);">
 			<!-- <img src="wp-content/uploads/2022/06/bg-set-task.png" alt=""> -->
@@ -537,7 +566,7 @@
 		<div class="_container">
 			<div class="set-task__wrapper">
 				<div class="set-task__text__block">
-					<p class="set-task__pretitle">
+					<p class="set-task__title">
 						Спроектуємо систему під ваші побажання та запропонуємо як заощадити </p>
 					<p class="set-task__title">
 						Три концепії реалізації проекта з варіантами<br />
@@ -566,12 +595,16 @@
 
 						p {
 							font-size: 16px;
-							line-height: 20px;
+							line-height: 25px;
 						}
 
 						h3 {
 							line-height: 30px;
 							margin-bottom: 30px;
+						}
+						.calculation{
+							background: url('./assets/vector.png');
+							background-size: cover;
 						}
 
 						@media(max-width:830px) {
@@ -750,11 +783,6 @@
 				</div>
 			</div>
 		</div>
-
-		<div class="calculation__bg skrollable skrollable-between" data-top-bottom="transform: translateY(50px);"
-			data-bottom-top="transform: translateY(-50px);">
-			<img src="wp-content/uploads/2022/06/bg-calculation.png" alt="calculation">
-		</div>
 	</section>
 	<section class="brands">
 		<div class="max_width">
@@ -762,6 +790,18 @@
 				Бренди, котрі нам довіряють
 			</h2>
 			<style>
+				.koncept_item {
+					webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+					-moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+					box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+					transition: .3s;
+				}
+				.koncept_item:hover{
+					cursor: pointer;
+					transform: translateY(-10px);
+					box-shadow: none;
+				}
+
 				.max_width {
 					max-width: 1240px;
 					margin: 0 auto;
@@ -792,7 +832,7 @@
 					width: 120px;
 
 				}
-			
+
 				@media(max-width:800px) {
 					.brands_flex {
 						grid-template-columns: repeat(4, 1fr);
@@ -802,24 +842,30 @@
 					.what_we_do_grid {
 						grid-template-columns: 1fr 1fr;
 					}
-					.do_item > p{
+
+					.do_item>p {
 						text-align: left;
 					}
 				}
-				
+
 				@media(max-width: 500px) {
 					.brands_flex {
 						grid-template-columns: repeat(2, 1fr);
 					}
 				}
 
-				@media(max-width:620px) {
+				@media(max-width:700px) {
 					.title_grid {
 						grid-template-columns: 1fr;
+						margin-top: 40px;
+					}
+					.text_grid > h2{
+						font-weight: 500;
+						line-height: 38px;
 					}
 				}
 
-				
+
 
 				@media(max-width: 430px) {
 					.what_we_do_grid {
@@ -2520,7 +2566,7 @@
 				<div class="contacts_wrapper">
 					<div class="cont_grid">
 						<div class="map">
-							<iframe 
+							<iframe
 								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.4312719821046!2d30.622256715688!3d50.45169327947554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c556893455f9%3A0xbca609032ee91694!2z0YPQuy4g0J_QvtC20LDRgNGB0LrQvtCz0L4sIDQsINCa0LjQtdCyLCAwMjAwMA!5e0!3m2!1sru!2sua!4v1661269632627!5m2!1sru!2sua"
 								width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
 								referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -2530,24 +2576,27 @@
 								<input class="b_input" type="text" name="name" placeholder="Прізвище та Ім'я" required>
 								<input class="b_input" type="text" name="email" placeholder="E-mail" required>
 								<input class="b_input" type="text" name="phone" placeholder="Номер телефону" required>
-								<textarea  class="b_input" name="text" id="" cols="10" rows="10" placeholder="Повідомлення"></textarea>
-								<button style="text-align: center; width: 100%;" type="submit" class="_btn"> Відправити</button>
+								<textarea class="b_input" name="text" id="" cols="10" rows="10"
+									placeholder="Повідомлення"></textarea>
+								<button style="text-align: center; width: 100%;" type="submit" class="_btn">
+									Відправити</button>
 							</form>
 						</div>
 					</div>
 				</div>
 				<style>
-				
-					.b_input{
+					.b_input {
 						margin: 10px 0;
 						border-radius: 0rem;
 						resize: none;
 					}
+
 					.form_cont {
 						background-color: #6C7C96;
 						padding: 30px;
 					}
-					.form_cont > form{ 
+
+					.form_cont>form {
 						background: transparent;
 					}
 
@@ -2594,8 +2643,7 @@
 								<p><span class="wpcf7-form-control-wrap email-940"><input type="email" name="email-940"
 											value="" size="40"
 											class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"
-											aria-required="true" aria-invalid="false"
-											placeholder="E-mail" /></span></p>
+											aria-required="true" aria-invalid="false" placeholder="E-mail" /></span></p>
 								<p>Uwagi w formie słownej</p>
 								<p><span class="wpcf7-form-control-wrap textarea-425"><textarea name="textarea-425"
 											cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea"
@@ -2633,18 +2681,18 @@
 						LOGO
 					</a>
 				</div>
-				<div class="footer-contacts" >
+				<div class="footer-contacts">
 					<div class="footer-contacts__numbers">
 						<a href="tel:+380961695775" class="footer-contacts__tel">+380 96 169 5775
 						</a>
 						<a href="tel:+380731695775" class="footer-contacts__tel">+380 73 169 5775</a>
 					</div>
 					<div class="footer-contacts__adress">
-						<p style="color:#fff; "  target="_blank" rel="nofollow noopener">
+						<p style="color:#fff; " target="_blank" rel="nofollow noopener">
 							02094, м. Київ, вул. Пожарського, 4</p>
 						<a style="color: #fff;" href="mailto:info@expert-project.com.ua">info@expert-project.com.ua</a>
 					</div>
-					
+
 
 					<div class="footer-contacts__socials">
 						<a href="viber_3A//chat@number=937999288" class="footer-contacts__messenger">
@@ -2674,7 +2722,7 @@
 					</div>
 				</div>
 				<style>
-					a{
+					a {
 						color: #fff;
 					}
 				</style>
@@ -2690,27 +2738,32 @@
 			margin: 0;
 			padding: 0;
 		}
-		@media(max-width:762px){
-				.top_header{
-					margin-top: -30px;
-				}
-				
+
+		@media(max-width:762px) {
+			.top_header {
+				margin-top: -30px;
 			}
-		@media(max-width:762px){
-			.cont_grid{
-					/* grid-template-columns: 1fr; */
-					display: flex;
-					flex-wrap: wrap-reverse;
-				}
-				.form_cont{
-					width: 100%;
-				}
-				.map{
-					width: 100%;
-				}
-				.map > iframe{
-					height: 500px;
-				}
+
+		}
+
+		@media(max-width:762px) {
+			.cont_grid {
+				/* grid-template-columns: 1fr; */
+				display: flex;
+				flex-wrap: wrap-reverse;
+			}
+
+			.form_cont {
+				width: 100%;
+			}
+
+			.map {
+				width: 100%;
+			}
+
+			.map>iframe {
+				height: 500px;
+			}
 		}
 	</style>
 	<script src='wp-content/plugins/contact-form-7/includes/js/index.js' id='contact-form-7-js'></script>

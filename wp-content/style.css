@@ -1492,9 +1492,11 @@ select::placeholder {
 }
 .set-task__text__block {
   text-align: center;
+  max-width: 1240px;
   color: #5a6988;
   font-family: "Montserrat", sans-serif;
-  max-width: 800px;
+  /* max-width: 800px; */
+  
   margin: 0 auto 60px;
 }
 @media screen and (max-width: 830px) {
@@ -3074,58 +3076,27 @@ select::placeholder {
   background-color: #fff;
   position: relative;
   overflow: hidden;
-  padding-bottom: 640px;
+  padding-bottom: 50px;
 }
 @media screen and (max-width: 1760px) {
   .calculation {
-    padding-bottom: 520px;
+    padding-bottom: 50px;
   }
 }
 @media screen and (max-width: 1140px) {
   .calculation {
-    padding-bottom: 440px;
+    padding-bottom: 50px;
   }
 }
 @media screen and (max-width: 1020px) {
   .calculation {
-    padding-bottom: 370px;
+    padding-bottom: 40px;
   }
 }
-@media screen and (max-width: 915px) {
-  .calculation {
-    padding-bottom: 345px;
-  }
-}
-@media screen and (max-width: 690px) {
-  .calculation {
-    padding-bottom: 300px;
-  }
-}
-@media screen and (max-width: 590px) {
-  .calculation {
-    padding-bottom: 270px;
-  }
-}
-@media screen and (max-width: 520px) {
-  .calculation {
-    padding-bottom: 240px;
-  }
-}
-@media screen and (max-width: 520px) {
-  .calculation {
-    padding-bottom: 187px;
-  }
-}
-@media screen and (max-width: 416px) {
-  .calculation {
-    padding-bottom: 165px;
-  }
-}
-@media screen and (max-width: 370px) {
-  .calculation {
-    padding-bottom: 139px;
-  }
-}
+
+
+
+
 .calculation__bg {
   position: absolute;
   bottom: 0px;
