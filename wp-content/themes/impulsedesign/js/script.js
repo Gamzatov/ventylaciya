@@ -50,16 +50,13 @@ $(document).ready(function(){
         e.preventDefault()
     })
 
-    //package
     $('.package-way').slideUp(300)
 
     $('.package-list .package-list__item.package-list__item__open').click(function(event){
 
-        //appear arrow and do active card
         $(this).toggleClass('_active-package')
         $('.package-list .package-list__item').not($(this)).removeClass("_active-package")
         
-        //appear way
         const goto = $(this).attr('data-goto');
 
 
@@ -68,37 +65,25 @@ $(document).ready(function(){
         $('.package-way').not($(goto)).slideUp(300)
         if(goto && $(goto)){
             
-        
-            // console.log($(goto).offset());
-            // console.log($('.main__btn').offset());
-            // $(goto).addClass('_active-package')
-            // $('.package-way').not($(goto)).removeClass('_active-package')
         }
 
-        //scroll to "way" on the adaptive
         if($(goto).hasClass('_active-package')){
             $([document.documentElement, document.body]).animate({
                 scrollTop: $(".package-list").offset().top + $(".package-list").height()
             }, 500)
         }
-        // setTimeout(()=>{
             
-        // }, 300)
         
     })
 
     $(window).scroll(function () { 
         const packageItems = $('._active-package .package-way-list__item')
-        // console.log('********************************');
-        // console.log(Array.from(packageItems));
 
         
         Array.from(packageItems).forEach((item, index, arr) => {
             const top = item.getBoundingClientRect().top
             const windowHeight =  $(window).innerHeight();
 
-            // console.log(windowHeight);
-            // console.log(top);
 
             if(top < windowHeight - 200){
                 $(item).addClass('_visible-way-item')
