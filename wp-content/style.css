@@ -1968,8 +1968,8 @@ select::placeholder {
 }
 .economy-list__numbering {
   font-weight: 700;
-  font-size: 44px;
-  line-height: 40px;
+  font-size: 44px !important;
+  line-height: 40px !important;
 
   margin-right: 20px;
   background: linear-gradient(
