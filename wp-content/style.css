@@ -1966,7 +1966,7 @@ select::placeholder {
     margin-bottom: 40px;
   }
 }
-.economy-list__numbering {
+.economy-list__numbering > p {
   font-weight: 700;
   font-size: 44px !important;
   line-height: 40px !important;
