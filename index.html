@@ -404,11 +404,19 @@
 				justify-content: space-between;
 
 			}
+			.text_grid > h2{
+				text-align: center;
+			}
+			@media(max-width:762px){
+				.text_grid > h2{
+					text-align: left;
+				}
+			}
 		</style>
 
-		<div class="_container main__container" style="margin-top: 50px;">
+		<div class="_container main__container top_header" >
 			<div class="main__subtitle wow fadeInLeft text_grid">
-				<h2 style="text-align: center; color:#fff;">Єффективні кліматичні рішення <br> для комфорту та
+				<h2 style="color:#fff;">Єффективні кліматичні рішення <br> для комфорту та
 					затишку <br> вашого простору <br>
 					за короткий термін</h2>
 			</div>
@@ -2676,6 +2684,20 @@
 		body {
 			margin: 0;
 			padding: 0;
+		}
+		@media(max-width:762px){
+				.top_header{
+					margin-top: -30px;
+				}
+				
+			}
+		@media(max-width:762px){
+			.cont_grid{
+					grid-template-columns: 1fr;
+				}
+				.map > iframe{
+					height: 500px;
+				}
 		}
 	</style>
 	<script src='wp-content/plugins/contact-form-7/includes/js/index.js' id='contact-form-7-js'></script>
