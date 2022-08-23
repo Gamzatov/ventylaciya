@@ -528,7 +528,7 @@
 			</style>
 		</div>
 	</section>
-	<section class="set-task" style="padding:50px;">
+	<section class="set-task" >
 		<div class="set-task__bg skrollable skrollable-between" data-top-bottom="transform: translateY(10px);"
 			data-bottom-top="transform: translateY(-50px);">
 			<!-- <img src="wp-content/uploads/2022/06/bg-set-task.png" alt=""> -->
@@ -792,7 +792,7 @@
 					width: 120px;
 
 				}
-
+			
 				@media(max-width:800px) {
 					.brands_flex {
 						grid-template-columns: repeat(4, 1fr);
@@ -803,6 +803,11 @@
 						grid-template-columns: 1fr 1fr;
 					}
 				}
+				@media(max-width: 500px) {
+					.brands_flex {
+						grid-template-columns: repeat(2, 1fr);
+					}
+				}
 
 				@media(max-width:620px) {
 					.title_grid {
@@ -810,11 +815,7 @@
 					}
 				}
 
-				@media(max-wdith: 500px) {
-					.brands_flex {
-						grid-template-columns: repeat(3, 1fr) !important;
-					}
-				}
+				
 
 				@media(max-width: 430px) {
 					.what_we_do_grid {
@@ -2693,7 +2694,15 @@
 			}
 		@media(max-width:762px){
 			.cont_grid{
-					grid-template-columns: 1fr;
+					/* grid-template-columns: 1fr; */
+					display: flex;
+					flex-wrap: wrap-reverse;
+				}
+				.form_cont{
+					width: 100%;
+				}
+				.map{
+					width: 100%;
 				}
 				.map > iframe{
 					height: 500px;
