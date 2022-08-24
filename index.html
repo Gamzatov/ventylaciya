@@ -647,7 +647,7 @@
 							</div> -->
 
 							<header class="card__header">
-								
+
 
 								<!-- <span class="card__header-subtitle">Free plan</span> -->
 								<h1 class="card__header-title">«БЮДЖЕТ»</h1>
@@ -665,7 +665,7 @@
 								</li>
 							</ul>
 
-							<a  href="#map" class="card__button">Дізнатися більше</a>
+							<a href="#map" class="card__button">Дізнатися більше</a>
 						</article>
 
 						<!--==================== CARD 2 ====================-->
@@ -678,7 +678,7 @@
 							</div>
 
 							<header class="card__header">
-								
+
 
 								<span class="card__header-subtitle">Популярний</span>
 								<h1 class="card__header-title" style="margin-top: 30px;">«ОПТИМАЛЬНИЙ»</h1>
@@ -695,7 +695,7 @@
 
 							</ul>
 
-							<a  href="#map" class="card__button">Дізнатися більше</a>
+							<a href="#map" class="card__button">Дізнатися більше</a>
 						</article>
 
 						<!--==================== CARD 3 ====================-->
@@ -707,8 +707,8 @@
 								<span class="card__pricing-month"></span>
 							</div> -->
 
-							<header class="card__header" >
-								
+							<header class="card__header">
+
 
 								<!-- <span class="card__header-subtitle">For agencies</span> -->
 								<h1 class="card__header-title">«ПРЕМІУМ»</h1>
@@ -725,15 +725,16 @@
 								</li>
 							</ul>
 
-							<a  href="#map" class="card__button">Дізнатися більше</a>
+							<a href="#map" class="card__button">Дізнатися більше</a>
 						</article>
 					</div>
 				</section>
 	</section>
 	<style>
-		.card__button{
+		.card__button {
 			text-align: center;
 		}
+
 		.what_we_do_grid {
 			display: grid;
 			/* text-align: center; */
@@ -1405,38 +1406,119 @@
 	</section>
 	<section class="calculation">
 
-		<div class="_container">
+		<div class="container">
 			<div class="calculation__wrapper">
-
+				<!-- 
 				<div class="title__container calculation__title__container">
-					<h2 class="title calculation__title wow fadeInUp" data-wow-duration=".3s" data-wow-delay=".1s">
-						Надішліть архитектурний проект</h2>
-					<!-- <p class="subtitle calculation__subtitle wow fadeInUp" data-wow-duration=".3s" data-wow-delay=".3s">
-						Wyślij nam krzesło architektoniczne i otrzymaj wycenę </p> -->
+
+					<p class="subtitle calculation__subtitle wow fadeInUp" data-wow-duration=".3s" data-wow-delay=".3s">
+						Wyślij nam krzesło architektoniczne i otrzymaj wycenę </p>
+				</div> -->
+
+				<style>
+					.pop_up {
+						visibility: hidden;
+						display: none;
+					}
+
+					.project_wrapper {
+						display: grid;
+						grid-template-columns: 1fr 0.8fr;
+						align-items: center;
+						gap: 40px;
+					}
+
+					.project_btns {
+						display: grid;
+						grid-template-columns: 1fr 1fr;
+						align-items: center;
+						color: #111;
+						margin-top: 30px;
+					}
+
+					.proj {
+						text-align: left;
+					}
+
+					.project_socials>a {
+						color: #111;
+						margin: 0 10px;
+						transition: .3s;
+					}
+
+					.small_btn {
+						padding: 10px 15px;
+						background: transparent;
+						border: 2px solid #00d084;
+						border-radius: 3px;
+					}
+
+					.project_socials>a:hover {
+						color: #5A6988;
+					}
+				</style>
+				<div class="project_wrapper">
+					<div class="project_text">
+						<h2 class="title calculation__title wow fadeInUp proj" data-wow-duration=".3s"
+							data-wow-delay=".1s">
+							Надішліть архитектурний проект
+						</h2>
+						<p>
+							Залиште заявку на сайті і наші менеджери зв'яжуться з вами протягом дня
+						</p>
+						<div class="project_btns">
+							<div>
+								<button onclick="show()" id="togglePop" class="small_btn">
+									Замовити розрахунок
+								</button>
+							</div>
+							<div class="project_socials">
+								<a href="">
+									Telegram
+								</a>
+								<a href="">
+									Viber
+								</a>
+								<a href="">
+									E-mail
+								</a>
+							</div>
+
+						</div>
+					</div>
+					<div class="project_image">
+						<img src="./assets/img/laptop.png" alt="">
+					</div>
 				</div>
 
-				<div class="calculation__form__container">
+				<div class="calculation__form__container pop_up" id="pop">
 					<div class="calculation-form">
+						<div class="close">
+							<button onclick="hide()">
+								X
+							</button>
+						</div>
 						<div role="form" class="wpcf7" id="wpcf7-f5-o1" lang="ru-RU" dir="ltr">
-							<div class="screen-reader-response">
+							<!-- <div class="screen-reader-response">
 								<p role="status" aria-live="polite" aria-atomic="true"></p>
 								<ul></ul>
-							</div>
+							</div> -->
 							<form action="/#wpcf7-f5-o1" method="post" class="wpcf7-form init"
 								enctype="multipart/form-data" novalidate="novalidate" data-status="init">
-								<div style="display: none;">
+								<!-- <div style="display: none;">
 									<input type="hidden" name="_wpcf7" value="5" />
 									<input type="hidden" name="_wpcf7_version" value="5.5.6.1" />
 									<input type="hidden" name="_wpcf7_locale" value="ru_RU" />
 									<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f5-o1" />
 									<input type="hidden" name="_wpcf7_container_post" value="0" />
 									<input type="hidden" name="_wpcf7_posted_data_hash" value="" />
-								</div>
+								</div> -->
 								<p><span class="wpcf7-form-control-wrap file-300">
 										<input type="file" name="file-300" size="40"
 											class="wpcf7-form-control wpcf7-file" id="drawing"
 											accept=".jpg,.jpeg,.png,.gif,.pdf,.doc,.docx,.ppt,.pptx,.odt,.avi,.ogg,.m4a,.mov,.mp3,.mp4,.mpg,.wav,.wmv"
-											aria-invalid="false" /></span><br />
+											aria-invalid="false" /></span>
+									<br />
 									<label for="drawing"><svg width="18" height="19" viewBox="0 0 18 19" fill="none"
 											xmlns="http://www.w3.org/2000/svg">
 											<path
@@ -3370,7 +3452,70 @@
 	<script src="https://code.jquery.com/jquery-3.5.1.min.js" id='jquery-js'></script>
 	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-	<!-- <script src='wp-includes/swiper.js' id='script-main-js'></script> -->
+	<!-- <sc		<script>
+					let btn = document.getElementById('togglePop');
+					let pops = document.getElementById('pop');
+
+					function show (){
+						pops.style.display = 'block';
+					}
+
+				</script>ript src='wp-includes/swiper.js' id='script-main-js'></sc> -->
+	<script>
+		let btn = document.getElementById('togglePop');
+		let pops = document.getElementById('pop');
+
+		function show() {
+			pops.style.display = 'block';
+			pops.style.visibility = 'visible'
+		}
+		function hide() {
+			pops.style.display = 'none';
+			pops.style.visibility = 'hidden'
+		}
+
+	</script>
+	<style>
+		.pop_up {
+			position: fixed;
+			width: 100% !important;
+			height: 100% !important;
+			top: 0;
+			max-width: 100% !important;
+			background: rgb(0, 0, 0, .6);
+			backdrop-filter: blur(20px);
+			z-index: 9999;
+			left: 0;
+		}
+
+		.calculation-form {
+			position: absolute;
+			top: 20%;
+			z-index: 999;
+			left: 20%;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+		.close{
+			position: relative;
+		}
+		.close > button{
+			position: absolute;
+			right: -30px;
+			font-size: 22px;
+			background: #cf2e2e;
+			color: #fff;
+			height: 30px;
+			width: 30px;
+			border-radius: 50%;
+			top: -30px;
+		}
+		.calculation-form{
+			padding: 20px;
+			border-radius: 3px;
+		}
+	</style>
 
 </body>
 
