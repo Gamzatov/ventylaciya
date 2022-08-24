@@ -336,7 +336,7 @@ form label[for="drawing-audit"] {
 }
 form label[for="drawing"]:hover,
 form label[for="drawing-audit"]:hover {
-  background-color: rgba(141, 183, 39, 1);
+  background-color: #00d084;
 }
 form label[for="drawing"]:hover svg,
 form label[for="drawing-audit"]:hover svg {
@@ -929,6 +929,7 @@ select::placeholder {
 .contacts__close__list {
   position: relative;
   width: 25px;
+  cursor: pointer;
   height: 25px;
   -webkit-transition: all 1.7s ease;
   transition: all 1.7s ease;
@@ -938,14 +939,16 @@ select::placeholder {
 .contacts__close__list._active-contacts {
   -webkit-transform: rotate(-720deg);
   transform: rotate(-720deg);
+  color: #00d084;
 }
 .contacts__close__list::before,
 .contacts__close__list::after {
   content: "";
+  cursor: pointer;
   position: absolute;
   left: 0;
   top: 50%;
-  background-color: #0E0E1A;
+  background-color: #00d084;
   height: 2px;
   width: 100%;
   -webkit-transform: translate(0, -50%);
@@ -998,6 +1001,9 @@ select::placeholder {
     right: 0;
     -webkit-transition: all 0.7s ease 0s;
     transition: all 0.7s ease 0s;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(20px);
+  
   }
 }
 @media screen and (max-width: 835px) {
@@ -1037,7 +1043,7 @@ select::placeholder {
   transition: all 0.3s ease;
 }
 .contacts__tel:hover {
-  color: rgba(141, 183, 39, 1);
+  color: #00d084;
 }
 @media screen and (max-width: 1320px) {
   .contacts__tel {
@@ -1076,7 +1082,7 @@ select::placeholder {
   transition: all 0.3s ease;
 }
 .contacts__messenger:hover svg path {
-  fill: rgba(141, 183, 39, 1);
+  fill: #00d084;
 }
 @media screen and (max-width: 1320px) {
   .contacts__messenger {
