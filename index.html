@@ -364,7 +364,13 @@
 
 	<style>
 		.main {
-			background-image: url('./main.jpg');
+			background-image: url('./assets/bg/ventilasya-2.jpg');
+		}
+
+		@media(max-width:600px) {
+			.main {
+				background-position: 10%;
+			}
 		}
 	</style>
 	<div class="attention">
@@ -499,33 +505,38 @@
 						2900+ встановленого обладнання
 					</h3>
 				</div>
-				
+
 				<style type="text/css">
 					.marquee {
-					   width: 100%;
-					   margin: 0 auto;
-					   font-size:26px;
-					   color:#fff;
-					   white-space: nowrap;
-					   overflow: hidden;
-					   border-radius:4px;
+						width: 100%;
+						margin: 0 auto;
+						font-size: 26px;
+						color: #fff;
+						white-space: nowrap;
+						overflow: hidden;
+						border-radius: 4px;
 					}
-					
+
 					.marquee p {
-					   display: inline-block;
-					   padding-left: 100%;
-					   animation: marquee 20s linear infinite;
+						display: inline-block;
+						padding-left: 100%;
+						animation: marquee 20s linear infinite;
 					}
-					
+
 					.marquee p:hover {
-					   animation-play-state: paused;
+						animation-play-state: paused;
 					}
-					
+
 					@keyframes marquee {
-					 0%   { transform: translate(0, 0); }
-					 100% { transform: translate(-100%, 0); }
+						0% {
+							transform: translate(0, 0);
+						}
+
+						100% {
+							transform: translate(-100%, 0);
+						}
 					}
-					</style>
+				</style>
 				<style>
 					.sub_grid {
 						display: flex;
@@ -557,6 +568,7 @@
 			</style>
 		</div>
 	</section>
+
 	<section class="set-task">
 		<div class="set-task__bg skrollable skrollable-between" data-top-bottom="transform: translateY(10px);"
 			data-bottom-top="transform: translateY(-50px);">
@@ -587,8 +599,9 @@
 						}
 
 						.koncept_item {
-							background: #6C7C96;
-							color: #fff;
+							/* background: #6C7C96; */
+							background: #E7EAEF;
+							color: #0E0E1A;
 							padding: 20px;
 							border-radius: 10px;
 						}
@@ -602,10 +615,8 @@
 							line-height: 30px;
 							margin-bottom: 30px;
 						}
-						.calculation{
-							background: url('./assets/vector.png');
-							background-size: cover;
-						}
+
+
 
 						@media(max-width:830px) {
 							.koncept {
@@ -660,53 +671,177 @@
 
 			</div>
 		</div>
-	</section>
-	<style>
-		.what_we_do_grid {
-			display: grid;
-			text-align: center;
-			grid-template-columns: repeat(4, 1fr);
-			justify-content: space-around;
-			gap: 30px;
-			max-width: 1240px;
-			margin: 20px auto;
-		}
+		<!-- </section> -->
+		<style>
+			.what_we_do_grid {
+				display: grid;
+				/* text-align: center; */
+				grid-template-columns: 1fr 1fr;
+				justify-content: space-around;
+				gap: 0px;
+				background-color: #5A6988;
+				border-radius: 10px;
+				max-width: 960px;
+				margin: 20px auto;
+			}
 
-		.what_we_do {
-			background-color: #6C7C96;
-			padding-left: 30px;
-			padding-right: 30px;
-			color: #fff;
-		}
 
-		.what_we_do>h2 {
-			margin: 30px auto;
-		}
-	</style>
-	<section class="what_we_do">
-		<h2>
+			.what_we_do {
+				padding-left: 30px;
+				padding-right: 30px;
+				background-color: #ffffff;
+			}
+
+			.what_we_do>h2 {
+				margin: 30px auto;
+			}
+
+			.do_item {
+				padding: 20px;
+				align-items: center;
+			}
+
+			.left_i {
+				border-right: 2px solid #eaeaea;
+			}
+
+			.poster {
+				position: relative;
+				margin: 10px auto;
+				height: 450px;
+				transition: .3s;
+				width: 25%;
+			}
+
+			.descr,
+			.descr2 {
+				opacity: 0;
+				margin: 0px auto;
+				padding-top: 30%;
+				background: rgb(0, 0, 0, .6);
+				backdrop-filter: blur(10px);
+				height: 100%;
+				padding: 20px;
+				color: #fff;
+				transition: .2s;
+				-moz-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+				-webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+				box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+			}
+
+			.poster:hover .descr {
+				opacity: 1;
+				position: absolute;
+				top: 0%;
+				left: 0%;
+				transition: .2s;
+				border-radius: 10px;
+				z-index: 9999;
+				width: 50%;
+			}
+
+			.poster_grid {
+				display: flex;
+				max-width: 1200px;
+				margin: 0 auto;
+				grid-template-columns: 1fr 1fr 1fr 1fr;
+			}
+
+			.one {
+				background: url('./assets/bg/etap-konsultatsia.jpg');
+				background-size: cover;
+				background-position: center;
+				border-top-left-radius: 10px;
+				border-bottom-left-radius: 10px;
+				
+			}
+
+			.two {
+				background: url('./assets/bg/2-etap-min.jpg');
+				background-size: cover;
+				background-position: center;
+			}
+
+			.three {
+				background: url('./assets/bg/etap-montazh-2var.jpg');
+				background-size: cover;
+				background-position: center;
+			}
+
+			.four {
+				background: url('./assets/bg/etap-servis.jpg');
+				background-size: cover;
+				background-position: center;
+				border-top-right-radius: 10px;
+				border-bottom-right-radius: 10px;
+			}
+
+			.descr>p {
+				font-size: 20px;
+			}
+			.descr{
+				padding-top: 50px;
+			}
+			.poster:hover {
+				height: 450px;
+				width: 42%;
+			}
+			.descr_img > p {
+				font-size: 60px;
+				color: #00d084;
+				margin: 30px auto;
+				font-weight: bold;
+			}
+			.descr_img{
+				text-align: center;
+			}
+		</style>
+
+		<!-- <section class="what_we_do"> -->
+		<h2 style="color:#0E0E1A">
 			Що ми робимо
 		</h2>
-		<div class="what_we_do_grid">
-			<div class="do_item">
-				<p>
-					Виконуємо еренгоаудит систем опалення, вентиляції і кондиціонування
-				</p>
+		<div class="poster_grid">
+			<div class="poster one">
+				<div class="descr" >
+					<div class="descr_img">
+						<p>
+							1
+						</p>
+					</div>
+					<p> Виконуємо еренгоаудит систем опалення, вентиляції і кондиціонування</p>
+				</div>
+
 			</div>
-			<div class="do_item">
-				<p>
-					Готуємо техніко-економічне обгрунтування
-				</p>
+			<div class="poster two">
+				<div class="descr">
+					<div class="descr_img">
+						<p>
+							2
+						</p>
+					</div>
+					<p> Готуємо техніко-економічне обгрунтування</p>
+				</div>
 			</div>
-			<div class="do_item">
-				<p>
-					Проєктуємо нові або Модернізуємо існуючі систему опалення, вентиляції, кондиціонування
-				</p>
+			<div class="poster three">
+				<div class="descr">
+					<div class="descr_img">
+						<p>
+							3
+						</p>
+					</div>
+					<p> Проєктуємо нові або Модернізуємо існуючі систему опалення, вентиляції, кондиціонування</p>
+				</div>
 			</div>
-			<div class="do_item">
-				<p>
-					Комплектуємо об'єкти та виконуємо монтаж любої складності "під ключ"
-				</p>
+			<div class="poster four">
+				<div class="descr">
+					<div class="descr_img">
+						<p>
+							4
+						</p>
+					</div>
+					<p> Комплектуємо об'єкти та виконуємо монтаж любої складності "під ключ"</p>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -796,7 +931,8 @@
 					box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
 					transition: .3s;
 				}
-				.koncept_item:hover{
+
+				.koncept_item:hover {
 					cursor: pointer;
 					transform: translateY(-10px);
 					box-shadow: none;
@@ -859,7 +995,8 @@
 						grid-template-columns: 1fr;
 						margin-top: 40px;
 					}
-					.text_grid > h2{
+
+					.text_grid>h2 {
 						font-weight: 500;
 						line-height: 38px;
 					}
@@ -2766,6 +2903,17 @@
 			}
 		}
 	</style>
+	<script>
+		$('div.container-focus').mouseover(function () {
+			$('.container').find('p').each(function () {
+				$(this).css('display', 'none');
+			});
+
+			var focus = $(this).attr('data-focus');
+
+			$('.' + focus).css('display', 'block');
+		});
+	</script>
 	<script src='wp-content/plugins/contact-form-7/includes/js/index.js' id='contact-form-7-js'></script>
 
 	<script src='https://code.jquery.com/jquery-3.5.1.min.js' id='jquery-js'></script>
