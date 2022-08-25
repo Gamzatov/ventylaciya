@@ -1120,18 +1120,18 @@ select::placeholder {
   width: 100%;
   height: 100%;
   z-index: 2;
-  background: -webkit-gradient(
+  /* background: -webkit-gradient(
     linear,
     left top,
     right top,
     from(rgba(0, 0, 0, 0.6)),
     to(rgba(0, 0, 0, 0.2))
-  );
-  background: linear-gradient(
+  ); */
+  /* background: linear-gradient(
     90deg,
     rgba(0, 0, 0, 0.6) 0%,
     rgba(0, 0, 0, 0.2) 100%
-  );
+  ); */
   -webkit-backdrop-filter: blur(3px);
   backdrop-filter: blur(3px);
   margin-right: auto;
@@ -1159,7 +1159,7 @@ select::placeholder {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
+    /* background: rgba(0, 0, 0, 0.5); */
     z-index: 2;
   }
 }
@@ -4743,7 +4743,10 @@ textarea {
 }
 @media (max-width: 430px) {
   .header__wrapper {
-    margin-top: 40px;
+    margin-top: 54px;
+  }
+  .attention_flex > p{
+    font-size: 12px;
   }
 }
 @media (max-width: 505px) {
