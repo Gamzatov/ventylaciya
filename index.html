@@ -314,7 +314,7 @@
 							</div>
 						</div>
 						<div class="header__tagline__mob">
-							<p> Systemy inżynieryjne <span></span>"pod klucz" o dowolnej złożoności</p>
+							<p> Інженерні системи <span></span>під ключ будь-якої складності</p>
 						</div>
 						<div class="contacts__numbers">
 							<a href="tel_3A+380731695775" class="contacts__tel">+380 73 169 5775</a>
@@ -368,15 +368,20 @@
 
 	<style>
 		.main {
-			background-image: url('./assets/bg/ventilasya-2.jpg');
-			/* background-image: url('./assets/bg/bg-min.jpg'); */
+			/* background-image: url('./assets/bg/ventilasya-2.jpg'); */
+			background-image: url('./assets/bg/bg-min.jpg');
+			/* background-image: url('./assets/bg/light.jpg'); */
+
 		}
 
 		@media(max-width:600px) {
 			.main {
 				background-position: 10%;
+				background-image: url('./assets/bg/light.jpg');
 			}
+			
 		}
+	
 	</style>
 	<div class="attention">
 		<div class="attention_flex">
@@ -420,23 +425,64 @@
 				text-align: center;
 			}
 
+			.title_item {
+				color: #151515;
+			}
+
 			@media(max-width:762px) {
 				.text_grid>h2 {
 					text-align: left;
 				}
+
+				.main__subtitle {
+					background: rgba(255, 255, 255, .5);
+					padding: 20px;
+					backdrop-filter: blur(20px);
+					border-radius: 10px;
+				}
+
+				 .left{
+					background: rgba(255, 255, 255, .5);
+					padding: 20px;
+					backdrop-filter: blur(20px);
+					margin-left: -20px;
+					border-radius: 10px;
+
+				}
+				 .right{
+					background: rgba(255, 255, 255, .5);
+					padding: 20px;
+					backdrop-filter: blur(20px);
+					margin-right: -20px;
+					border-radius: 10px;
+					margin-top: 20px;
+				}
+
+				.title_item>span {
+					font-weight: 400;
+				}
 			}
+			.item_subtitle{
+				font-size: 18px;
+				text-align: center;
+				font-weight: 700;
+				margin: 20px auto;
+				}
 		</style>
 
 		<div class="_container main__container top_header">
 			<div class="main__subtitle wow fadeInLeft text_grid">
-				<h2 style="color:#fff;">Єффективні кліматичні рішення <br> для комфорту та
+				<h2 style="color: #151515;">Єффективні кліматичні рішення <br> для комфорту та
 					затишку <br> вашого простору <br>
 					за короткий термін</h2>
 			</div>
 			<div class="main__wrapper">
 				<h1 class="title main__title wow fadeInUp" data-wow-duration=".5s" data-wow-delay="0s">
 					<div class="title_grid">
-						<div class="title_item">
+						<div class="title_item left">
+							<p class="item_subtitle">
+								text
+							</p>
 							<span>
 								<ion-icon class="check" name="checkmark-circle-outline"></ion-icon>Кондиціювання,
 							</span>
@@ -450,7 +496,10 @@
 								<ion-icon class="check" name="checkmark-circle-outline"></ion-icon>Теплові Насоси
 							</span>
 						</div>
-						<div class="title_item">
+						<div class="title_item right">
+							<p class="item_subtitle">
+								Під Ключ
+							</p>
 							<span>
 								<ion-icon class="check" name="checkmark-circle-outline"></ion-icon>Проектування,
 							</span>
@@ -498,18 +547,23 @@
 
 
 			</div>
-		
+
 			<div class="subtitle_header">
 				<div class="sub_grid">
 					<h3>
-						<ion-icon class="color_icons" name="star-outline"></ion-icon> Досвід більше <span class="counter">10</span> років
+						<ion-icon class="color_icons" name="star-outline"></ion-icon> Досвід більше <span
+							class="counter"> 10</span> років
 					</h3>
 					<h3>
-						<ion-icon class="color_icons" name="briefcase-outline"></ion-icon><span class="counter">600</span> +
+						<ion-icon class="color_icons" name="briefcase-outline"></ion-icon>
+
+						<span class="counter">
+							600</span> +
 						виконаних об'єктів
 					</h3>
 					<h3>
-						<ion-icon class="color_icons" name="file-tray-stacked-outline"></ion-icon><span class="counter">2900</span>+ встановленого
+						<ion-icon class="color_icons" name="file-tray-stacked-outline"></ion-icon>
+						<span class="counter"> 2900</span>+ встановленого
 						обладнання
 					</h3>
 
@@ -577,13 +631,17 @@
 			<style>
 				.subtitle_header {
 					text-align: center;
-					margin-top: 50px;
-					color: #fff;
+					color: #151515;
 				}
 
 				._btn {
 					display: inline;
 					margin-top: 30px;
+				}
+				@media(max-width:600px){
+					.subtitle_header{
+						margin-top: -50px;
+					}
 				}
 			</style>
 		</div>
@@ -766,7 +824,7 @@
 			background-size: cover !important;
 			padding-right: 30px;
 			background: url('./bg-light-blue-wIEu.png');
-			padding-bottom: 60px;
+			padding-bottom: 166px;
 		}
 
 		.what_we_do>h2 {
@@ -3076,13 +3134,18 @@
 			</div>
 		</div>
 	</section>
-
+	<style>
+		.split_color {
+			background: url('./bg-light-blue-wIEu.png');
+			background-size: cover;
+		}
+	</style>
 	<section class="package split_color">
 		<div class="_container">
-			<h2 class="title package-list__title" style="color: #fff;">
+			<h2 class="title package-list__title">
 				ЯК ПРАЦЮЄ ПАКЕТ «ВСЕ ПІД КЛЮЧ»
 			</h2>
-			<div class="package-list__text" style="color: #fff;">
+			<div class="package-list__text">
 				<p>
 					ЯК ПРАЦЮЄ ПАКЕТ «ВСЕ ПІД КЛЮЧ»Перевірений роками, результативний алгоритм
 				</p>
@@ -3352,7 +3415,9 @@
 							right: 0;
 							border-radius: 0;
 							width: 90%;
-							background-color: #151515;
+						}
+						.audit__wrappers{
+							background-color: #fff;
 						}
 					}
 				</style>
@@ -3436,9 +3501,9 @@
 						<a href="tel:+380731695775" class="footer-contacts__tel">+380 73 169 5775</a>
 					</div>
 					<div class="footer-contacts__adress">
-						<p style="color:#fff; " target="_blank" rel="nofollow noopener">
+						<p  target="_blank" rel="nofollow noopener">
 							02094, м. Київ, вул. Пожарського, 4</p>
-						<a style="color: #fff;" href="mailto:info@expert-project.com.ua">info@expert-project.com.ua</a>
+						<a  href="mailto:info@expert-project.com.ua">info@expert-project.com.ua</a>
 					</div>
 
 
@@ -3469,13 +3534,9 @@
 						</a>
 					</div>
 				</div>
-				<style>
-					a {
-						color: #fff;
-					}
-				</style>
+			
 				<div class="footer__copyrights">
-					<p style="color: #fff;">© Кліматичні рішення, 2022</p>
+					<p>© Кліматичні рішення, 2022</p>
 
 				</div>
 			</div>
