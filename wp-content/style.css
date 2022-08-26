@@ -658,12 +658,12 @@ form input[type="submit"]:active {
 }
 ._btn._btn-white {
   /* border-color: #151515; */
-  color: #fff;
-  border: 1px solid #fff;
+  color: #151515;
+  border: 1px solid #151515;
 }
 ._btn:hover {
-  color: #fff;
-  border: 1px solid #fff;
+  color: #151515;
+  border: 1px solid #151515;
   /* background: #00d084; */
 }
 .header_social {
@@ -813,7 +813,7 @@ select::placeholder {
   z-index: 9;
 }
 .header__wrapper {
-  color: #fff;
+  color: #151515;
   margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -998,7 +998,7 @@ select::placeholder {
   font-weight: 500;
   font-size: 15px;
   line-height: 18px;
-  color: #fff;
+  color: #151515;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -1127,11 +1127,11 @@ select::placeholder {
     from(rgba(0, 0, 0, 0.6)),
     to(rgba(0, 0, 0, 0.2))
   ); */
-  /* background: linear-gradient(
+  background: linear-gradient(
     90deg,
-    rgba(0, 0, 0, 0.6) 0%,
-    rgba(0, 0, 0, 0.2) 100%
-  ); */
+    rgba(255, 255, 255, 0.6) 0%,
+    rgba(255, 255, 255, 0.2) 100%
+  );
   -webkit-backdrop-filter: blur(3px);
   backdrop-filter: blur(3px);
   margin-right: auto;
