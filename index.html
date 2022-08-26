@@ -4,6 +4,10 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.counterup/1.0/jquery.counterup.min.js"></script>
 
 	<title>Кліматичні рішення &#8212; </title>
 	<meta name='robots' content='max-image-preview:large' />
@@ -494,20 +498,30 @@
 
 
 			</div>
+		
 			<div class="subtitle_header">
 				<div class="sub_grid">
 					<h3>
-						<ion-icon class="color_icons" name="star-outline"></ion-icon> Досвід більше 10 років
+						<ion-icon class="color_icons" name="star-outline"></ion-icon> Досвід більше <span class="counter">10</span> років
 					</h3>
 					<h3>
-						<ion-icon class="color_icons" name="briefcase-outline"></ion-icon> 600 + виконаних об'єктів
+						<ion-icon class="color_icons" name="briefcase-outline"></ion-icon><span class="counter">600</span> +
+						виконаних об'єктів
 					</h3>
 					<h3>
-						<ion-icon class="color_icons" name="file-tray-stacked-outline"></ion-icon> 2900+ встановленого
+						<ion-icon class="color_icons" name="file-tray-stacked-outline"></ion-icon><span class="counter">2900</span>+ встановленого
 						обладнання
 					</h3>
-				</div>
 
+				</div>
+				<script>
+					$('.counter').counterUp({
+						delay: 10,
+						time: 2000
+					});
+					$('.counter').addClass('animated fadeInDownBig');
+					$('h3').addClass('animated fadeIn');
+				</script>
 				<style type="text/css">
 					.marquee {
 						width: 100%;
@@ -651,16 +665,15 @@
 
 
 								<!-- <span class="card__header-subtitle">Free plan</span> -->
-								<h1 class="card__header-title">«БЮДЖЕТ»</h1>
+								<h1 class="card__header-title">ЕКОНОМ</h1>
 							</header>
 
 							<ul class="card__list grid">
 								<li class="card__list-item">
 									<i class="uil uil-check card__list-icon"></i>
-									<p class="card__list-description">Малоизвестный производитель с устаревшими
-										технологиями оборудования, низкой энергоэффективностью и КПД, с возможными
-										частыми случаями выхода из строя. Не рекомендуется как единственный источник для
-										эксплуатации в режиме 24/7
+									<p class="card__list-description">Маловідомий виробник із застарілими технологіями
+										обладнання, низькою енергоефективністю та ККД, із можливими частими випадками
+										виходу з ладу. Не рекомендується як єдине джерело для експлуатації у режимі 24/7
 
 									</p>
 								</li>
@@ -682,16 +695,16 @@
 
 
 								<span class="card__header-subtitle">Популярний</span>
-								<h1 class="card__header-title" style="margin-top: 30px;">«ОПТИМАЛЬНИЙ»</h1>
+								<h1 class="card__header-title" style="margin-top: 30px;">СЕРЕДНІЙ </h1>
 							</header>
 
 							<ul class="card__list grid">
 								<li class="card__list-item">
 									<i class="uil uil-check card__list-icon"></i>
-									<p class="card__list-description">Известный производитель с современными системами
-										оборудования выше среднего качества, хорошими показателями энергоэффективности,
-										КПД, и надежными параметрами эксплуатации. Может использоваться как основной
-										источник эксплуатации 24/7</p>
+									<p class="card__list-description">Відомий виробник із сучасними системами обладнання
+										вище середньої якості, хорошими показниками енергоефективності, ККД та надійними
+										параметрами експлуатації. Може використовуватись як основне джерело експлуатації
+										24/7</p>
 								</li>
 
 							</ul>
@@ -712,17 +725,16 @@
 
 
 								<!-- <span class="card__header-subtitle">For agencies</span> -->
-								<h1 class="card__header-title">«ПРЕМІУМ»</h1>
+								<h1 class="card__header-title">ПРЕМІУМ</h1>
 							</header>
 
 							<ul class="card__list grid">
 								<li class="card__list-item">
 									<i class="uil uil-check card__list-icon"></i>
-									<p class="card__list-description">Премиум производитель оборудования с самыми
-										современными технологиями, высокой энергоэффективностью, возможностью полного
-										автоматизированного управления и многозадачности по системе "Умный дом",
-										длительным сроком эксплуатации в режиме 24/7, при минимальных энергозатратах
-										относительно мощности.</p>
+									<p class="card__list-description">Преміум виробник обладнання з найсучаснішими
+										технологіями, високою енергоефективністю, можливістю повного автоматизованого
+										управління та багатозадачності за системою "Розумний дім", тривалим терміном
+										експлуатації в режимі 24/7, за мінімальних енерговитрат щодо потужності.</p>
 								</li>
 							</ul>
 
@@ -751,8 +763,9 @@
 
 		.what_we_do {
 			padding-left: 30px;
+			background-size: cover !important;
 			padding-right: 30px;
-			background-color: #151515;
+			background: url('./bg-light-blue-wIEu.png');
 			padding-bottom: 60px;
 		}
 
@@ -804,6 +817,15 @@
 			width: 100%;
 		}
 
+		.poster:hover .inner_text {
+			color: #fff;
+			font-size: 20px;
+		}
+
+		.poster:hover .poster_inner:before {
+			background: #fff;
+		}
+
 		.poster_grid {
 			display: flex;
 			max-width: 1150px;
@@ -815,8 +837,8 @@
 			background: url('./assets/bg/etap-konsultatsia.jpg');
 			background-size: cover;
 			background-position: center;
-			border-top-left-radius: 3px;
-			border-bottom-left-radius: 3px;
+			border-top-left-radius: 10px;
+			border-bottom-left-radius: 10px;
 
 		}
 
@@ -836,8 +858,8 @@
 			background: url('./assets/bg/etap-servis.jpg');
 			background-size: cover;
 			background-position: center;
-			border-top-right-radius: 3px;
-			border-bottom-right-radius: 3px;
+			border-top-right-radius: 10px;
+			border-bottom-right-radius: 10px;
 		}
 
 		.descr>p {
@@ -868,18 +890,20 @@
 			content: '01';
 			position: absolute;
 			bottom: -10px;
-			left: 40px;
+			left: 30px;
 			z-index: 999;
 			color: #00d084;
 			font-size: 68px;
+			font-weight: bold;
 		}
 
 		.two:before {
 			content: '02';
 			position: absolute;
 			bottom: -10px;
-			left: 40px;
+			left: 30px;
 			z-index: 999;
+			font-weight: bold;
 			color: #00d084;
 			font-size: 60px;
 		}
@@ -888,7 +912,8 @@
 			content: '03';
 			position: absolute;
 			bottom: -10px;
-			left: 40px;
+			left: 30px;
+			font-weight: bold;
 			z-index: 999;
 			color: #00d084;
 			font-size: 60px;
@@ -896,12 +921,44 @@
 
 		.four:before {
 			content: '04';
+			font-weight: bold;
 			position: absolute;
 			bottom: -10px;
-			left: 40px;
+			left: 30px;
 			z-index: 999;
 			color: #00d084;
 			font-size: 60px;
+		}
+
+
+		.poster_info {
+			position: relative;
+			height: 100px;
+		}
+
+		.poster_inner {
+			position: absolute;
+			max-width: 250px;
+			top: 46%;
+			left: 30px;
+			z-index: 4;
+			transition: .2s;
+			padding-top: 20px;
+		}
+
+		.poster_inner:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			width: 70px;
+			height: 2px;
+			background: #000;
+		}
+
+		.inner_text {
+			color: #111;
+			font-weight: 500;
+			max-width: 150px;
 		}
 
 		@media(max-width:762px) {
@@ -915,9 +972,19 @@
 			}
 
 			.poster {
-				width: 90%;
+				width: 100%;
 				border-radius: 3px;
-				margin: 20px auto;
+				margin: 60px auto;
+			}
+
+			.inner_text {
+				width: 100%;
+				max-width: none;
+			}
+
+			.poster_inner {
+				width: 100%;
+				max-width: none;
 			}
 
 			.poster:hover {
@@ -927,7 +994,7 @@
 	</style>
 
 	<section class="what_we_do">
-		<h2 style=" margin: 30px auto;">
+		<h2 style="margin: 30px auto; color: #151515;">
 			Що ми робимо
 		</h2>
 		<div class="poster_grid">
@@ -1055,9 +1122,15 @@
 							</svg>
 						</p>
 					</div>
-					<p> Виконуємо еренгоаудит систем опалення, вентиляції і кондиціонування</p>
+					<p> Виконуємо енергоаудит систем опалення, вентиляції і кондиціонування</p>
 				</div>
-
+				<div class="poster_info">
+					<div class="poster_inner">
+						<p class="inner_text">
+							Виконуємо енергоаудит
+						</p>
+					</div>
+				</div>
 			</div>
 			<div class="poster two">
 				<div class="descr">
@@ -1154,6 +1227,13 @@
 						</p>
 					</div>
 					<p> Готуємо техніко-економічне обгрунтування</p>
+				</div>
+				<div class="poster_info">
+					<div class="poster_inner">
+						<p class="inner_text">
+							Техніко-економічне обгрунтування
+						</p>
+					</div>
 				</div>
 			</div>
 			<div class="poster three">
@@ -1291,6 +1371,13 @@
 					</div>
 					<p> Проєктуємо нові або Модернізуємо існуючі систему опалення, вентиляції, кондиціонування</p>
 				</div>
+				<div class="poster_info">
+					<div class="poster_inner">
+						<p class="inner_text">
+							Проєктуємо або Модернізуємо
+						</p>
+					</div>
+				</div>
 			</div>
 			<div class="poster four">
 				<div class="descr">
@@ -1401,6 +1488,13 @@
 						</p>
 					</div>
 					<p> Комплектуємо об'єкти та виконуємо монтаж любої складності "під ключ"</p>
+				</div>
+				<div class="poster_info">
+					<div class="poster_inner">
+						<p class="inner_text">
+							Комплектуємо об'єкти
+						</p>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -1579,47 +1673,50 @@
 
 			<div class="brands_flex">
 				<div class="brand_logo">
-						<!-- <p>
+					<!-- <p>
 						Mitsubishi Electric
 					</p> -->
-						<img class="brand_logo_img" src="./assets/img/brands/mitshubishi.png" alt="">
+					<img class="brand_logo_img" src="./assets/img/brands/mdv.png" alt="">
 
 				</div>
 				<div class="brand_logo">
-						<!-- <p>
+					<!-- <p>
 						NIBE
 					</p> -->
-						<img class="brand_logo_img" src="./assets/img/brands/nibe.png" alt="">
+					<img class="brand_logo_img" src="./assets/img/brands/general.png" alt="">
+
 				</div>
 				<div class="brand_logo">
-						<!-- <p>
+					<!-- <p>
 						DAIKIN
 					</p> -->
-						<img class="brand_logo_img" src="./assets/img/brands/daikin.png" alt="">
+					<img class="brand_logo_img" src="./assets/img/brands/midea.png" alt="">
+
 				</div>
 				<div class="brand_logo">
-						<!-- <p>
+					<!-- <p>
 						C&H
 					</p> -->
-						<img class="brand_logo_img" src="./assets/img/brands/cooper.png" alt="">
+					<img class="brand_logo_img" src="./assets/img/brands/cooper.png" alt="">
 				</div>
 				<div class="brand_logo">
-						<!-- <p>
+					<!-- <p>
 						GREE
 					</p> -->
-						<img class="brand_logo_img" src="./assets/img/brands/gree.png" alt="">
+					<img class="brand_logo_img" src="./assets/img/brands/gree.png" alt="">
 				</div>
 				<div class="brand_logo">
-						<!-- <p>
+					<!-- <p>
 						MIDEA
 					</p> -->
-						<img class="brand_logo_img" src="./assets/img/brands/midea.png" alt="">
+
+					<img class="brand_logo_img" src="./assets/img/brands/daikin.png" alt="">
 				</div>
 				<div class="brand_logo">
-						<!-- <p>
+					<!-- <p>
 						SAMSUNG
 					</p> -->
-						<img class="brand_logo_img" src="./assets/img/brands/samsung.png" alt="">
+					<img class="brand_logo_img" src="./assets/img/brands/mitshubishi.png" alt="">
 				</div>
 			</div>
 		</div>
@@ -3484,10 +3581,12 @@
 			left: 50%;
 			transform: translate(-50%, -50%);
 		}
-		.close{
+
+		.close {
 			position: relative;
 		}
-		.close > button{
+
+		.close>button {
 			position: absolute;
 			right: -30px;
 			font-size: 22px;
@@ -3498,28 +3597,34 @@
 			border-radius: 50%;
 			top: -30px;
 		}
-		.calculation-form{
+
+		.calculation-form {
 			padding: 20px;
 			border-radius: 3px;
 		}
-		@media(max-width:805px){
-			.calculation-form{
+
+		@media(max-width:805px) {
+			.calculation-form {
 				width: 90%;
 			}
-			.project_wrapper{
+
+			.project_wrapper {
 				grid-template-columns: 1fr;
 			}
-			.project_image > img{
+
+			.project_image>img {
 				max-width: 400px;
 				width: 100%;
 				text-align: center;
 			}
-			.project_image{
+
+			.project_image {
 				text-align: center;
 			}
 		}
-		@media(max-width:455px){
-			.project_btns{
+
+		@media(max-width:455px) {
+			.project_btns {
 				grid-template-columns: 1fr;
 				gap: 40px;
 			}
