@@ -443,9 +443,9 @@
 			}
 
 			@media(max-width:762px) {
-				.text_grid>h2 {
+				/* .text_grid>h2 {
 					text-align: left;
-				}
+				} */
 
 				.title_item>span {
 					font-weight: 400;
@@ -468,13 +468,13 @@
 
 		<div class="_container main__container top_header">
 			<div class="main__subtitle wow fadeInLeft text_grid">
-				<h2 style="color: #151515;">Енергоефективні рішення <br> для <span class="green_text"> 
-						</span>
-						<div class="container">
-							<div class="text">приватних</div>
-							<div class="text">комерційних</div>
-							<div class="text">промислових</div>
-						</div>
+				<h2 style="color: #151515;">Енергоефективні рішення <br> для <span class="green_text">
+					</span>
+					<div class="container_text">
+						<div class="text">приватних</div>
+						<div class="text">комерційних</div>
+						<div class="text">промислових</div>
+					</div>
 					обєктів
 				</h2>
 				<h1 style="font-weight: 600; margin-top:30px; text-align:center; color:#151515;">
@@ -520,83 +520,12 @@
 						</div>
 					</div>
 				</h1>
-				
+
 				<style>
-					.container {
-						text-align: center;
-						height: 60px;
-						padding: 0 50px;
-						/* отступы по краям */
-					}
 
-					.text {
-						font-family: Arial, Helvetica, sans-serif;
-						font-size: 40px;
-						line-height: 60px;
-						/* равен высоте контейнера */
-						text-transform: uppercase;
-					}
-
-					.container {
-						overflow: hidden;
-					}
-
-					@keyframes slide {
-						0% {
-							margin-top: 0;
-						}
-
-						20% {
-							margin-top: -60px;
-						}
-
-						33% {
-							margin-top: -120px;
-						}
-
-						/* 50% {
-							margin-top: -180px;
-						} */
-
-						50% {
-							margin-top: -120px;
-						}
-
-						82% {
-							margin-top: -60px;
-						}
-
-						100% {
-							margin-top: 0;
-						}
-					}
-
-					.text:first-child {
-						animation: slide 12s infinite;
-					}
 				</style>
 				<style>
-					.check {
-						color: #00d084;
-						margin-right: 20px;
-					}
 
-					.title_grid {
-						font-size: 20px;
-						display: flex;
-						justify-content: space-between;
-						column-gap: 30px;
-					}
-
-					.title_grid>span {
-						height: 33px !important;
-					}
-
-					@media(max-width:600px) {
-						.sub_grid {
-							flex-direction: column;
-						}
-					}
 				</style>
 
 
@@ -708,6 +637,111 @@
 		</div>
 
 	</section>
+	<section class="mob">
+		<div class="tab_wrapper">
+			<h2>
+				Системи
+			</h2>
+
+			<div id="code-box-1" class="tab_grid">
+
+				<div class="code-tabs">
+					<button class="tablinks" onclick="openTab(event, 'cond','code-box-1')"
+						id="defaultOpen-1">Кондиціювання</button>
+					<button class="tablinks" onclick="openTab(event, 'vent','code-box-1')">Вентиляція</button>
+					<button class="tablinks" onclick="openTab(event, 'heat','code-box-1')">Опалення</button>
+					<button class="tablinks" onclick="openTab(event, 'nasos','code-box-1')">Теплові Насоси</button>
+					<div class="spacer"></div>
+				</div>
+				<div class="answ">
+
+					<pre id="cond" class="sg-tab-content">
+				<p>Кондиціювання1</p>
+			</pre>
+
+					<pre id="vent" class="sg-tab-content">
+				<p>Вентиляція</p>
+			</pre>
+
+					<pre id="heat" class="sg-tab-content">
+				<p>Опалення</p>
+			</pre>
+					<pre id="nasos" class="sg-tab-content">
+				<p>Теплові Насоси</p>
+			</pre>
+				</div>
+			</div>
+		</div>
+		<div class="tab_wrapper">
+			<h2>
+				Під Ключ
+			</h2>
+			<div id="code-box-2" class="tab_grid">
+
+				<div class="code-tabs">
+					<button class="tablinks" onclick="openTab(event, 'project','code-box-2')"
+						id="defaultOpen-2">Проектування</button>
+					<button class="tablinks" onclick="openTab(event, 'complect','code-box-2')">Комплектація</button>
+					<button class="tablinks" onclick="openTab(event, 'montage','code-box-2')">Монтаж</button>
+					<button class="tablinks" onclick="openTab(event, 'servis','code-box-2')">Сервіс</button>
+					<div class="spacer"></div>
+				</div>
+				<div class="answ">
+					<div id="project" class="sg-tab-content" style="display: block;">
+						<p>Проектування</p>
+					</div>
+					<pre id="complect" class="sg-tab-content">
+				<p>Комплектація</p>
+				</pre>
+
+					<pre id="montage" class="sg-tab-content">
+				<p>Монтаж</p>
+				</pre>
+
+					<pre id="servis" class="sg-tab-content">
+				<p>Сервіс</p>
+			</pre>
+				</div>
+			</div>
+		</div>
+
+
+	</section>
+	<style>
+		.tab_wrapper > h2{
+			margin: 20px auto;
+		}
+		.code-tabs {
+			width: 180px;
+		}
+
+		.code-tabs>button {
+			/* display: block; */
+			background-color: #00d084;
+			color: #fff;
+			padding: 15px;
+			text-align: left;
+			font-size: 18px;
+			border: none;
+			width: 100%;
+		}
+
+		.code-tabs {
+			display: grid;
+		}
+
+		.tab_grid {
+			display: grid;
+			grid-template-columns: .4fr 1fr;
+			gap: 30px;
+		}
+
+		.sg-tab-content {
+			display: none;
+		}
+	</style>
+
+
 
 	<section class="set-task">
 		<div class="set-task__bg skrollable skrollable-between" data-top-bottom="transform: translateY(10px);"
@@ -3666,15 +3700,6 @@
 	<script src="https://code.jquery.com/jquery-3.5.1.min.js" id='jquery-js'></script>
 	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-	<!-- <sc		<script>
-					let btn = document.getElementById('togglePop');
-					let pops = document.getElementById('pop');
-
-					function show (){
-						pops.style.display = 'block';
-					}
-
-				</script>ript src='wp-includes/swiper.js' id='script-main-js'></sc> -->
 	<script>
 		let btn = document.getElementById('togglePop');
 		let pops = document.getElementById('pop');
@@ -3760,6 +3785,28 @@
 			}
 		}
 	</style>
+	<script>
+		document.getElementById("defaultOpen-1").click();
+
+		function openTab(evt, tabName, boxName) {
+			var i, tabcontent, tablinks;
+
+			var box = document.getElementById(boxName)
+
+			tabcontent = box.getElementsByClassName("sg-tab-content");
+			for (i = 0; i < tabcontent.length; i++) {
+				tabcontent[i].style.display = "none";
+			}
+
+			tablinks = box.getElementsByClassName("tablinks");
+			for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(" sg-current", "");
+			}
+
+			document.getElementById(tabName).style.display = "block";
+			evt.currentTarget.className += " sg-current";
+		}
+	</script>
 
 </body>
 

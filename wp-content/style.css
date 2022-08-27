@@ -5479,3 +5479,163 @@ img {
     width: 100%;
   }
 }
+.container_text {
+  text-align: center;
+  height: 60px;
+  padding: 0 50px;
+  /* отступы по краям */
+}
+
+.text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  line-height: 60px;
+  /* равен высоте контейнера */
+  text-transform: uppercase;
+}
+
+.container_text {
+  overflow: hidden;
+}
+.check {
+  color: #00d084;
+  margin-right: 20px;
+}
+
+.title_grid {
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 30px;
+}
+
+.title_grid>span {
+  height: 33px !important;
+}
+.mob{
+  display: none;
+  background-color: #fff;
+}
+.mob_item{
+ 
+}
+@media(max-width:600px) {
+  .sub_grid {
+    flex-direction: column;
+  }
+}
+@media(max-width:762px){
+  .text{
+    font-size: 26px;
+    font-weight: 600;
+  }
+  .title_grid{
+    display: none;
+  }
+  .mob{
+    display: block;
+  }
+}
+
+@keyframes slide {
+  0% {
+    margin-top: 0;
+  }
+
+  20% {
+    margin-top: -60px;
+  }
+
+  33% {
+    margin-top: -120px;
+  }
+
+  /* 50% {
+    margin-top: -180px;
+  } */
+
+  50% {
+    margin-top: -120px;
+  }
+
+  82% {
+    margin-top: -60px;
+  }
+
+  100% {
+    margin-top: 0;
+  }
+}
+
+.text:first-child {
+  animation: slide 12s infinite;
+}
+.pop_up {
+  position: fixed;
+  width: 100% !important;
+  height: 100% !important;
+  top: 0;
+  max-width: 100% !important;
+  background: rgb(0, 0, 0, .6);
+  backdrop-filter: blur(20px);
+  z-index: 9999;
+  left: 0;
+}
+
+.calculation-form {
+  position: absolute;
+  top: 20%;
+  z-index: 999;
+  left: 20%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.close {
+  position: relative;
+}
+
+.close>button {
+  position: absolute;
+  right: -30px;
+  font-size: 22px;
+  background: #cf2e2e;
+  color: #fff;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  top: -30px;
+}
+
+.calculation-form {
+  padding: 20px;
+  border-radius: 3px;
+}
+
+@media(max-width:805px) {
+  .calculation-form {
+    width: 90%;
+  }
+
+  .project_wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .project_image>img {
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .project_image {
+    text-align: center;
+  }
+}
+
+@media(max-width:455px) {
+  .project_btns {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
