@@ -654,63 +654,116 @@
 					<div class="spacer"></div>
 				</div>
 				<div class="answ">
-
-					<pre id="cond" class="sg-tab-content">
-				<p>Кондиціювання1</p>
-			</pre>
-
-					<pre id="vent" class="sg-tab-content">
-				<p>Вентиляція</p>
-			</pre>
-
-					<pre id="heat" class="sg-tab-content">
-				<p>Опалення</p>
-			</pre>
-					<pre id="nasos" class="sg-tab-content">
-				<p>Теплові Насоси</p>
-			</pre>
-				</div>
-			</div>
-		</div>
-		<div class="tab_wrapper">
-			<h2>
-				Під Ключ
-			</h2>
-			<div id="code-box-2" class="tab_grid">
-
-				<div class="code-tabs">
-					<button class="tablinks" onclick="openTab(event, 'project','code-box-2')"
-						id="defaultOpen-2">Проектування</button>
-					<button class="tablinks" onclick="openTab(event, 'complect','code-box-2')">Комплектація</button>
-					<button class="tablinks" onclick="openTab(event, 'montage','code-box-2')">Монтаж</button>
-					<button class="tablinks" onclick="openTab(event, 'servis','code-box-2')">Сервіс</button>
-					<div class="spacer"></div>
-				</div>
-				<div class="answ">
-					<div id="project" class="sg-tab-content" style="display: block;">
-						<p>Проектування</p>
+					<div id="cond" class="sg-tab-content cond">
+						<p>Кондиціювання1</p>
 					</div>
-					<pre id="complect" class="sg-tab-content">
-				<p>Комплектація</p>
-				</pre>
 
-					<pre id="montage" class="sg-tab-content">
-				<p>Монтаж</p>
-				</pre>
+					<div id="vent" class="sg-tab-content vent">
+						<p>Вентиляція</p>
+					</div>
 
-					<pre id="servis" class="sg-tab-content">
-				<p>Сервіс</p>
-			</pre>
+					<div id="heat" class="sg-tab-content heat">
+						<p>Опалення</p>
+					</div>
+					<div id="nasos" class="sg-tab-content nasos">
+						<p>Теплові Насоси</p>
+						</d>
+					</div>
 				</div>
 			</div>
-		</div>
+			<div class="tab_wrapper">
+				<h2>
+					Під Ключ
+				</h2>
+				<div id="code-box-2" class="tab_grid">
+
+					<div class="code-tabs">
+						<button class="tablinks" onclick="openTab(event, 'project','code-box-2')"
+							id="defaultOpen-2">Проектування</button>
+						<button class="tablinks" onclick="openTab(event, 'complect','code-box-2')">Комплектація</button>
+						<button class="tablinks" onclick="openTab(event, 'montage','code-box-2')">Монтаж</button>
+						<button class="tablinks" onclick="openTab(event, 'servis','code-box-2')">Сервіс</button>
+						<div class="spacer"></div>
+					</div>
+					<div class="answ">
+						<div id="project" class="sg-tab-content" style="display: block;">
+							<p>Проектування</p>
+						</div>
+						<div id="complect" class="sg-tab-content">
+							<p>Комплектація</p>
+						</div>
+
+						<div id="montage" class="sg-tab-content">
+							<p>Монтаж</p>
+						</div>
+
+						<div id="servis" class="sg-tab-content">
+							<p>Сервіс</p>
+						</div>
+
+					</div>
+				</div>
 
 
 	</section>
 	<style>
-		.tab_wrapper > h2{
+		.cond {
+			background: url('./assets/img/vent.png');
+			background-size: cover;
+			height: 100%;
+		}
+		#complect{
+			background: url('./assets/img/');
+			background-size: cover;
+			height: 100%;
+		}
+		#montage{
+			background: url('./assets/img/montage_sub.jpg');
+			background-size: cover;
+			height: 100%;
+
+		}
+		#servis{
+			background: url('./assets/img/servis.png');
+			background-size: cover;
+			background-position: 69%;
+			height: 100%;
+
+		}
+
+		.vent {
+			background: url('./assets/img/vent_sub.jpg');
+			background-size: cover;
+			height: 100%;
+		}
+
+		.heat {
+			background: url('./assets/img/heating_sub.jpg');
+			background-size: cover;
+			height: 100%;
+			background-position: 50%;
+		}
+
+		.nasos {
+			background: url('./assets/img/nasos_sub.jpg');
+			background-size: cover;
+			height: 100%;
+		}
+
+		#project {
+			background: url('./assets/img/project.jpg');
+			height: 100%;
+			background-size: cover;
+		}
+
+		#complect {
+			background: url('./assets/img/');
+		}
+
+		.tab_wrapper>h2 {
 			margin: 20px auto;
 		}
+
 		.code-tabs {
 			width: 180px;
 		}
@@ -733,7 +786,6 @@
 		.tab_grid {
 			display: grid;
 			grid-template-columns: .4fr 1fr;
-			gap: 30px;
 		}
 
 		.sg-tab-content {
