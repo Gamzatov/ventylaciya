@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
-  font-family: 'Montserrat', sans-serif !important;
+  font-family: "Montserrat", sans-serif !important;
 }
 
 a {
@@ -1129,11 +1129,9 @@ select::placeholder {
   ); */
   background: linear-gradient(
     90deg,
-    rgba(255, 255, 255, 0.6) 0%,
-    rgba(255, 255, 255, 0.2) 100%
+    rgba(255, 255, 255, 0.7) 50%,
+    rgba(255, 255, 255, 0.8) 100%
   );
-  -webkit-backdrop-filter: blur(3px);
-  backdrop-filter: blur(3px);
   margin-right: auto;
 }
 @media screen and (max-width: 1680px) {
@@ -4745,7 +4743,7 @@ textarea {
   .header__wrapper {
     margin-top: 54px;
   }
-  .attention_flex > p{
+  .attention_flex > p {
     font-size: 12px;
   }
 }
@@ -5056,7 +5054,7 @@ img {
 .card__container {
   gap: 3rem 1.25rem;
 }
-.card__content:hover{
+.card__content:hover {
   transform: translateY(-10px);
 }
 
@@ -5103,7 +5101,7 @@ img {
 
 .card__pricing {
   position: absolute;
-  background:#00d084;
+  background: #00d084;
   width: 60px;
   height: 88px;
   right: 1.5rem;
@@ -5201,7 +5199,7 @@ img {
     border-radius: 1rem;
   }
 }
-.card{
+.card {
   background-color: transparent;
 }
 /* For medium devices */
@@ -5247,22 +5245,21 @@ img {
   grid-template-columns: 1fr 1fr;
   justify-content: space-around;
   gap: 0px;
-  background-color: #5A6988;
+  background-color: #5a6988;
   border-radius: 3px;
   max-width: 960px;
   margin: 20px auto;
 }
 
-
 .what_we_do {
   padding-left: 30px;
   background-size: cover !important;
   padding-right: 30px;
-  background: url('./bg-light-blue-wIEu.png');
+  background: url("./bg-light-blue-wIEu.png");
   padding-bottom: 166px;
 }
 
-.what_we_do>h2 {
+.what_we_do > h2 {
   margin: 30px auto;
 }
 
@@ -5279,7 +5276,7 @@ img {
   position: relative;
   margin: 10px auto;
   height: 450px;
-  transition: .3s;
+  transition: 0.3s;
   width: 25%;
 }
 
@@ -5288,12 +5285,12 @@ img {
   opacity: 0;
   margin: 0px auto;
   padding-top: 30%;
-  background: rgb(0, 0, 0, .6);
+  background: rgb(0, 0, 0, 0.6);
   /* backdrop-filter: blur(10px); */
   height: 100%;
   padding: 20px;
   color: #fff;
-  transition: .2s;
+  transition: 0.2s;
   -moz-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
@@ -5304,7 +5301,7 @@ img {
   position: absolute;
   top: 0%;
   left: 0%;
-  transition: .2s;
+  transition: 0.2s;
   border-radius: 3px;
   z-index: 3;
   width: 100%;
@@ -5327,35 +5324,34 @@ img {
 }
 
 .one {
-  background: url('./assets/bg/etap-konsultatsia.jpg');
+  background: url("./assets/bg/etap-konsultatsia.jpg");
   background-size: cover;
   background-position: center;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-
 }
 
 .two {
-  background: url('./assets/bg/2-etap-min.jpg');
+  background: url("./assets/bg/2-etap-min.jpg");
   background-size: cover;
   background-position: center;
 }
 
 .three {
-  background: url('./assets/bg/etap-montazh-2var.jpg');
+  background: url("./assets/bg/etap-montazh-2var.jpg");
   background-size: cover;
   background-position: center;
 }
 
 .four {
-  background: url('./assets/bg/etap-servis.jpg');
+  background: url("./assets/bg/etap-servis.jpg");
   background-size: cover;
   background-position: center;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
 }
 
-.descr>p {
+.descr > p {
   font-size: 20px;
 }
 
@@ -5368,7 +5364,7 @@ img {
   width: 42%;
 }
 
-.descr_img>p {
+.descr_img > p {
   font-size: 60px;
   color: #00d084;
   margin: 30px auto;
@@ -5380,7 +5376,7 @@ img {
 }
 
 .one:before {
-  content: '01';
+  content: "01";
   position: absolute;
   bottom: -10px;
   left: 30px;
@@ -5391,7 +5387,7 @@ img {
 }
 
 .two:before {
-  content: '02';
+  content: "02";
   position: absolute;
   bottom: -10px;
   left: 30px;
@@ -5402,7 +5398,7 @@ img {
 }
 
 .three:before {
-  content: '03';
+  content: "03";
   position: absolute;
   bottom: -10px;
   left: 30px;
@@ -5413,7 +5409,7 @@ img {
 }
 
 .four:before {
-  content: '04';
+  content: "04";
   font-weight: bold;
   position: absolute;
   bottom: -10px;
@@ -5422,7 +5418,6 @@ img {
   color: #00d084;
   font-size: 60px;
 }
-
 
 .poster_info {
   position: relative;
@@ -5435,12 +5430,12 @@ img {
   top: 46%;
   left: 30px;
   z-index: 4;
-  transition: .2s;
+  transition: 0.2s;
   padding-top: 20px;
 }
 
 .poster_inner:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   width: 70px;
@@ -5454,7 +5449,7 @@ img {
   max-width: 150px;
 }
 
-@media(max-width:762px) {
+@media (max-width: 762px) {
   .poster_grid {
     flex-direction: column;
   }
