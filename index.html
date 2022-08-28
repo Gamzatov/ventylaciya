@@ -376,12 +376,16 @@
 			/* background-image: url('./assets/bg/snyp5.jpg'); */
 
 		}
+		
 
 		@media(max-width:600px) {
 			.main {
 				background-position: 10%;
 				background-image: url('./assets/bg/light.jpg');
 			}
+			/* video{
+				display: none;
+			} */
 
 		}
 	</style>
@@ -678,7 +682,7 @@
 				<div id="code-box-2" class="tab_grid">
 
 					<div class="code-tabs">
-						<button class="tablinks" onclick="openTab(event, 'project','code-box-2')"
+						<button class="tablinks sg-current" onclick="openTab(event, 'project','code-box-2')"
 							id="defaultOpen-2">Проектування</button>
 						<button class="tablinks" onclick="openTab(event, 'complect','code-box-2')">Комплектація</button>
 						<button class="tablinks" onclick="openTab(event, 'montage','code-box-2')">Монтаж</button>
@@ -766,15 +770,19 @@
 			width: 180px;
 		}
 
-		.code-tabs>button {
+		.tablinks {
 			/* display: block; */
-			background-color: #00d084;
-			color: #fff;
+			background-color: #ECEFF2;
+			color: #151515;
 			padding: 15px;
 			text-align: left;
 			font-size: 18px;
 			border: none;
 			width: 100%;
+		}
+		.sg-current{
+			background-color: #00d084;
+			color: #fff;
 		}
 
 		.code-tabs {
