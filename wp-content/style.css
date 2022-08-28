@@ -1240,7 +1240,7 @@ select::placeholder {
 }
 @media screen and (max-width: 900px) {
   .main__wrapper {
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
   }
 }
 @media screen and (max-width: 770px) {
