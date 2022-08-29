@@ -376,14 +376,15 @@
 			/* background-image: url('./assets/bg/snyp5.jpg'); */
 
 		}
-		
+
 
 		@media(max-width:600px) {
 			.main {
 				background-position: 10%;
 				background-image: url('./assets/bg/light.jpg');
 			}
-			video{
+
+			video {
 				display: none;
 			}
 
@@ -440,7 +441,7 @@
 
 			.text_grid>h2 {
 				text-align: center;
-				font-size:29px
+				font-size: 29px
 			}
 
 			.title_item {
@@ -473,7 +474,7 @@
 
 		<div class="_container main__container top_header">
 			<div class="main__subtitle wow fadeInLeft text_grid">
-				<h2 class="head_title_mob" style="color: #151515;">Енергоефективні рішення  для <span class="green_text">
+				<h2 class="head_title_mob" style="color: #151515;">Енергоефективні рішення для <span class="green_text">
 					</span>
 					<div class="container_text">
 						<div class="text">приватних</div>
@@ -604,18 +605,22 @@
 							transform: translate(-100%, 0);
 						}
 					}
-					@media(max-width:500px){
-						.head_title_mob{
+
+					@media(max-width:500px) {
+						.head_title_mob {
 							margin-left: -10px;
 							margin-top: -20px;
 						}
-						.sub_grid > h3{
+
+						.sub_grid>h3 {
 							margin-bottom: 1px;
 						}
-						.mob_font{
+
+						.mob_font {
 							font-size: 35px;
 						}
-						.main_wrapper{
+
+						.main_wrapper {
 							margin-bottom: 10px;
 						}
 					}
@@ -658,160 +663,125 @@
 
 	</section>
 	<section class="mob">
+
+
 		<div class="tab_wrapper">
 			<h2>
 				Системи
 			</h2>
 
-			<div id="code-box-1" class="tab_grid">
+			<div class="accordion js-accordion">
+				<div class="accordion__item js-accordion-item">
+					<div class="accordion-header js-accordion-header">Кондиціювання</div>
+					<div class="accordion-body js-accordion-body">
+						<div class="accordion-body__contents cond">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sequi placeat
+							distinctio
+							dolor, amet magnam voluptatibus eos ex vero, sunt veritatis esse. Nostrum voluptatum et
+							repudiandae vel sed, explicabo in?
+						</div>
 
-				<div class="code-tabs">
-					<button class="tablinks" onclick="openTab(event, 'cond','code-box-1')"
-						id="defaultOpen-1">Кондиціювання</button>
-					<button class="tablinks" onclick="openTab(event, 'vent','code-box-1')">Вентиляція</button>
-					<button class="tablinks" onclick="openTab(event, 'heat','code-box-1')">Опалення</button>
-					<button class="tablinks" onclick="openTab(event, 'nasos','code-box-1')">Теплові Насоси</button>
-					<div class="spacer"></div>
+					</div </div>
+				</div><!-- end of accordion item -->
+				<div class="accordion__item js-accordion-item active">
+					<div class="accordion-header js-accordion-header">Вентиляція</div>
+					<div class="accordion-body js-accordion-body">
+						<div class="accordion-body__contents vent">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sequi placeat
+							distinctio
+							dolor, amet magnam voluptatibus eos ex vero, sunt veritatis esse. Nostrum voluptatum et
+							repudiandae vel sed, explicabo in?
+						</div>
+
+					</div>
 				</div>
-				<div class="answ">
-					<div id="cond" class="sg-tab-content cond">
-						<!-- <p>Кондиціювання1</p> -->
-					</div>
+				<div class="accordion__item js-accordion-item">
+					<div class="accordion-header js-accordion-header">Опалення</div>
+					<div class="accordion-body js-accordion-body">
+						<div class="accordion-body__contents heat">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sequi placeat
+							distinctio
+							dolor, amet magnam voluptatibus eos ex vero, sunt veritatis esse. Nostrum voluptatum et
+							repudiandae vel sed, explicabo in?
+						</div>
 
-					<div id="vent" class="sg-tab-content vent">
-						<!-- <p>Вентиляція</p> -->
-					</div>
+					</div><!-- end of accordion body -->
+				</div><!-- end of accordion item -->
+				<div class="accordion__item js-accordion-item">
+					<div class="accordion-header js-accordion-header">Теплові насоси</div>
+					<div class="accordion-body js-accordion-body">
+						<div class="accordion-body__contents nasos">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sequi placeat
+							distinctio
+							dolor, amet magnam voluptatibus eos ex vero, sunt veritatis esse. Nostrum voluptatum et
+							repudiandae vel sed, explicabo in?
+						</div>
 
-					<div id="heat" class="sg-tab-content heat">
-						<!-- <p>Опалення</p> -->
-					</div>
-					<div id="nasos" class="sg-tab-content nasos">
-						<!-- <p>Теплові Насоси</p> -->
-					</div>
-				</div>
+					</div><!-- end of accordion body -->
+				</div><!-- end of accordion item -->
 			</div>
+
 			<div class="tab_wrapper">
 				<h2>
 					Під Ключ
 				</h2>
-				<div id="code-box-2" class="tab_grid">
+				<div class="accordion js-accordion">
+					<div class="accordion__item js-accordion-item">
+						<div class="accordion-header js-accordion-header">Проектування</div>
+						<div class="accordion-body js-accordion-body">
+							<div class="accordion-body__contents project">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sequi placeat
+								distinctio
+								dolor, amet magnam voluptatibus eos ex vero, sunt veritatis esse. Nostrum voluptatum et
+								repudiandae vel sed, explicabo in?
+							</div>
 
-					<div class="code-tabs">
-						<button class="tablinks sg-current" onclick="openTab(event, 'project','code-box-2')"
-							id="defaultOpen-2">Проектування</button>
-						<button class="tablinks" onclick="openTab(event, 'complect','code-box-2')">Комплектація</button>
-						<button class="tablinks" onclick="openTab(event, 'montage','code-box-2')">Монтаж</button>
-						<button class="tablinks" onclick="openTab(event, 'servis','code-box-2')">Сервіс</button>
-						<div class="spacer"></div>
+						</div><!-- end of accordion body -->
+					</div><!-- end of accordion item -->
+					<div class="accordion__item js-accordion-item">
+						<div class="accordion-header js-accordion-header">Комплектація</div>
+						<div class="accordion-body js-accordion-body">
+							<div class="accordion-body__contents complect">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sequi placeat
+								distinctio
+								dolor, amet magnam voluptatibus eos ex vero, sunt veritatis esse. Nostrum voluptatum et
+								repudiandae vel sed, explicabo in?
+							</div>
+
+						</div>
 					</div>
-					<div class="answ">
-						<div id="project" class="sg-tab-content" style="display: block;">
-							<!-- <p>Проектування</p> -->
-						</div>
-						<div id="complect" class="sg-tab-content">
-							<!-- <p>Комплектація</p> -->
-						</div>
+					<div class="accordion__item js-accordion-item">
+						<div class="accordion-header js-accordion-header">Монтаж</div>
+						<div class="accordion-body js-accordion-body">
+							<div class="accordion-body__contents montage">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sequi placeat
+								distinctio
+								dolor, amet magnam voluptatibus eos ex vero, sunt veritatis esse. Nostrum voluptatum et
+								repudiandae vel sed, explicabo in?
+							</div>
 
-						<div id="montage" class="sg-tab-content">
-							<!-- <p>Монтаж</p> -->
 						</div>
+					</div>
+					<div class="accordion__item js-accordion-item">
+						<div class="accordion-header js-accordion-header">Сервіс</div>
+						<div class="accordion-body js-accordion-body">
+							<div class="accordion-body__contents servis">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sequi placeat
+								distinctio
+								dolor, amet magnam voluptatibus eos ex vero, sunt veritatis esse. Nostrum voluptatum et
+								repudiandae vel sed, explicabo in?
+							</div>
 
-						<div id="servis" class="sg-tab-content">
-							<!-- <p>Сервіс</p> -->
 						</div>
-
 					</div>
 				</div>
 
 
+
 	</section>
 	<style>
-		.cond {
-			background: url('./assets/img/vent.png');
-			background-size: cover;
-			height: 100%;
-		}
-		#complect{
-			background: url('./assets/bg/complect_sub.jpg');
-			background-size: cover;
-			height: 100%;
-		}
-		#montage{
-			background: url('./assets/img/montage_sub.jpg');
-			background-size: cover;
-			height: 100%;
 
-		}
-		#servis{
-			background: url('./assets/img/servis.png');
-			background-size: cover;
-			background-position: 69%;
-			height: 100%;
 
-		}
-
-		.vent {
-			background: url('./assets/img/vent_sub.jpg');
-			background-size: cover;
-			height: 100%;
-		}
-
-		.heat {
-			background: url('./assets/img/heating_sub.jpg');
-			background-size: cover;
-			height: 100%;
-			background-position: 50%;
-		}
-
-		.nasos {
-			background: url('./assets/img/nasos_sub.jpg');
-			background-size: cover;
-			height: 100%;
-		}
-
-		#project {
-			background: url('./assets/img/project.jpg');
-			height: 100%;
-			background-size: cover;
-		}
-
-		
-
-		.tab_wrapper>h2 {
-			margin: 20px auto;
-		}
-
-		.code-tabs {
-			width: 180px;
-		}
-
-		.tablinks {
-			/* display: block; */
-			background-color: #ECEFF2;
-			color: #151515;
-			padding: 15px;
-			text-align: left;
-			font-size: 18px;
-			border: none;
-			width: 100%;
-		}
-		.sg-current{
-			background-color: #00d084;
-			color: #fff;
-		}
-
-		.code-tabs {
-			display: grid;
-		}
-
-		.tab_grid {
-			display: grid;
-			grid-template-columns: .4fr 1fr;
-		}
-
-		.sg-tab-content {
-			display: none;
-		}
 	</style>
 
 
@@ -3788,97 +3758,61 @@
 
 	</script>
 	<style>
-		.pop_up {
-			position: fixed;
-			width: 100% !important;
-			height: 100% !important;
-			top: 0;
-			max-width: 100% !important;
-			background: rgb(0, 0, 0, .6);
-			backdrop-filter: blur(20px);
-			z-index: 9999;
-			left: 0;
-		}
 
-		.calculation-form {
-			position: absolute;
-			top: 20%;
-			z-index: 999;
-			left: 20%;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-		}
-
-		.close {
-			position: relative;
-		}
-
-		.close>button {
-			position: absolute;
-			right: -30px;
-			font-size: 22px;
-			background: #cf2e2e;
-			color: #fff;
-			height: 30px;
-			width: 30px;
-			border-radius: 50%;
-			top: -30px;
-		}
-
-		.calculation-form {
-			padding: 20px;
-			border-radius: 3px;
-		}
-
-		@media(max-width:805px) {
-			.calculation-form {
-				width: 90%;
-			}
-
-			.project_wrapper {
-				grid-template-columns: 1fr;
-			}
-
-			.project_image>img {
-				max-width: 400px;
-				width: 100%;
-				text-align: center;
-			}
-
-			.project_image {
-				text-align: center;
-			}
-		}
-
-		@media(max-width:455px) {
-			.project_btns {
-				grid-template-columns: 1fr;
-				gap: 40px;
-			}
-		}
 	</style>
 	<script>
-		document.getElementById("defaultOpen-1").click();
+		var accordion = (function () {
 
-		function openTab(evt, tabName, boxName) {
-			var i, tabcontent, tablinks;
+			var $accordion = $('.js-accordion');
+			var $accordion_header = $accordion.find('.js-accordion-header');
+			var $accordion_item = $('.js-accordion-item');
 
-			var box = document.getElementById(boxName)
+			// default settings 
+			var settings = {
+				// animation speed
+				speed: 400,
 
-			tabcontent = box.getElementsByClassName("sg-tab-content");
-			for (i = 0; i < tabcontent.length; i++) {
-				tabcontent[i].style.display = "none";
+				// close all other accordion items if true
+				oneOpen: false
+			};
+
+			return {
+				// pass configurable object literal
+				init: function ($settings) {
+					$accordion_header.on('click', function () {
+						accordion.toggle($(this));
+					});
+
+					$.extend(settings, $settings);
+
+					// ensure only one accordion is active if oneOpen is true
+					if (settings.oneOpen && $('.js-accordion-item.active').length > 1) {
+						$('.js-accordion-item.active:not(:first)').removeClass('active');
+					}
+
+					// reveal the active accordion bodies
+					$('.js-accordion-item.active').find('> .js-accordion-body').show();
+				},
+				toggle: function ($this) {
+
+					if (settings.oneOpen && $this[0] != $this.closest('.js-accordion').find('> .js-accordion-item.active > .js-accordion-header')[0]) {
+						$this.closest('.js-accordion')
+							.find('> .js-accordion-item')
+							.removeClass('active')
+							.find('.js-accordion-body')
+							.slideUp()
+					}
+
+					// show/hide the clicked accordion item
+					$this.closest('.js-accordion-item').toggleClass('active');
+					$this.next().stop().slideToggle(settings.speed);
+				}
 			}
+		})();
 
-			tablinks = box.getElementsByClassName("tablinks");
-			for (i = 0; i < tablinks.length; i++) {
-				tablinks[i].className = tablinks[i].className.replace(" sg-current", "");
-			}
-
-			document.getElementById(tabName).style.display = "block";
-			evt.currentTarget.className += " sg-current";
-		}
+		$(document).ready(function () {
+			accordion.init({ speed: 300, oneOpen: true });
+		});
 	</script>
 
 </body>

@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css");
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -2576,24 +2577,7 @@ select::placeholder {
     rgba(7, 135, 61, 1) 100%
   );
 }
-.project:hover {
-  background-image: url("./assets/img/bg-main-mini.png");
-  background-size: cover;
-  background-position: center;
-  color: #fff;
-}
-.montage:hover {
-  background-image: url("./assets/img/montage.png");
-  background-size: cover;
-  background-position: center;
-  color: #fff;
-}
-.vent:hover {
-  background-image: url("./assets/img/vent.png");
-  background-size: cover;
-  background-position: center;
-  color: #fff;
-}
+
 .allIn {
   margin-top: 40px;
   z-index: 9;
@@ -5637,5 +5621,258 @@ img {
   .project_btns {
     grid-template-columns: 1fr;
     gap: 40px;
+  }
+}
+.accordion {
+  background-color: #eee;
+  color: #444;
+  position: relative;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.accordion:hover {
+  /* background-color: #00d084; */
+  color: #fff;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+  height: 250px;
+}
+.pop_up {
+  position: fixed;
+  width: 100% !important;
+  height: 100% !important;
+  top: 0;
+  max-width: 100% !important;
+  background: rgb(0, 0, 0, .6);
+  backdrop-filter: blur(20px);
+  z-index: 9999;
+  left: 0;
+}
+
+.calculation-form {
+  position: absolute;
+  top: 20%;
+  z-index: 999;
+  left: 20%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.close {
+  position: relative;
+}
+
+.close>button {
+  position: absolute;
+  right: -30px;
+  font-size: 22px;
+  background: #cf2e2e;
+  color: #fff;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  top: -30px;
+}
+
+.calculation-form {
+  padding: 20px;
+  border-radius: 3px;
+}
+
+
+@media(max-width:805px) {
+  .calculation-form {
+    width: 90%;
+  }
+
+  .project_wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .project_image>img {
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .project_image {
+    text-align: center;
+  }
+}
+
+@media(max-width:455px) {
+  .project_btns {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+.cond {
+  background: url('../assets/img/vent.png');
+  background-size: cover;
+}
+
+.complect {
+  background: url('../assets/bg/complect_sub.jpg');
+  background-size: cover;
+}
+
+.montage {
+  background: url('../assets/img/montage_sub.jpg');
+  background-size: cover;
+
+}
+
+.servis {
+  background: url('../assets/img/servis.png');
+  background-size: cover;
+  background-position: 69%;
+
+}
+
+.vent {
+  background: url('../assets/img/vent_sub.jpg');
+  background-size: cover;
+}
+
+.heat {
+  background: url('../assets/img/heating_sub.jpg');
+  background-size: cover;
+  background-position: 50%;
+}
+
+.nasos {
+  background: url('../assets/img/nasos_sub.jpg');
+  background-size: cover;
+}
+
+.project {
+  background: url('../assets/img/project.jpg');
+  background-size: cover;
+}
+
+
+
+.tab_wrapper>h2 {
+  margin: 20px auto;
+}
+
+.code-tabs {
+  width: 180px;
+}
+
+.tablinks {
+  /* display: block; */
+  background-color: #ECEFF2;
+  color: #151515;
+  padding: 15px;
+  text-align: left;
+  font-size: 18px;
+  border: none;
+  width: 100%;
+}
+.accordion {
+  font-size: 1rem;
+  width: 30vw;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.accordion-header,
+.accordion-body {
+  background: white;
+}
+
+.accordion-header {
+  padding: 1.5em 1.5em;
+  background: #fafafa;
+  color: #151515;
+  cursor: pointer;
+  font-size: .7em;
+  letter-spacing: .1em;
+  transition: all .3s;
+  text-transform: uppercase;
+}
+
+.accordion__item {
+  border-bottom: 1px solid #151515;
+}
+
+.accordion__item .accordion__item {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.accordion-header:hover {
+  background: #00d084;
+  position: relative;
+  z-index: 5;
+}
+
+.accordion-body {
+  background: #fcfcfc;
+  color: #353535;
+  display: none;
+}
+
+.accordion-body__contents {
+  padding: 1.5em 1.5em;
+  font-size: .85em;
+  height: 250px;
+}
+
+.accordion__item.active:last-child .accordion-header {
+  border-radius: none;
+}
+
+.accordion:first-child>.accordion__item>.accordion-header {
+  border-bottom: 1px solid transparent;
+}
+
+.accordion__item>.accordion-header:after {
+  content: "\f3d0";
+  font-family: IonIcons;
+  font-size: 1.2em;
+  float: right;
+  position: relative;
+  top: -2px;
+  transition: .3s all;
+  transform: rotate(0deg);
+}
+
+.accordion__item.active>.accordion-header:after {
+  transform: rotate(-180deg);
+}
+
+.accordion__item.active .accordion-header {
+  background: #fafafa;
+  color: #151515;
+}
+
+.accordion__item .accordion__item .accordion-header {
+  background: #f1f1f1;
+  color: #353535;
+}
+
+@media screen and (max-width: 1000px) {
+  body {
+    padding: 1em;
+  }
+
+  .accordion {
+    width: 100%;
   }
 }
