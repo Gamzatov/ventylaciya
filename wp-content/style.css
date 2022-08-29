@@ -5989,15 +5989,7 @@ img {
   color: #151515;
 }
 
-@media (max-width: 762px) {
-  /* .text_grid>h2 {
-    text-align: left;
-  } */
 
-  .title_item > span {
-    font-weight: 400;
-  }
-}
 
 .item_subtitle {
   font-size: 18px;
@@ -6026,4 +6018,19 @@ img {
   font-family: "Comfortaa", cursive !important;
   font-size: 20px;
   text-align: center;
+}
+.mob_font{
+  margin-top: -20px;
+}
+@media (max-width: 762px) {
+  /* .text_grid>h2 {
+    text-align: left;
+  } */
+
+  .title_item > span {
+    font-weight: 400;
+  }
+  .mob_font{
+    margin-top: 5px;
+  }
 }
