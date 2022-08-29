@@ -4818,7 +4818,9 @@ textarea {
 ._btn {
   display: inline;
   margin-top: 30px;
+  font-family: c;
   border: 1px solid #fff;
+  font-family: "Comfortaa", cursive;
   /* background-color: #00d084; */
 }
 .koncept {
@@ -5777,7 +5779,7 @@ img {
   }
 }
 .cond {
-  background: url("../assets/img/vent.png");
+  background: url("../assets/img/cond.jpg");
   background-size: cover;
 }
 
