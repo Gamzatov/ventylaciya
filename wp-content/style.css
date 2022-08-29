@@ -566,7 +566,7 @@ form input[type="submit"]:active {
 }
 
 ._container {
-  max-width: 1140px;
+  max-width: 1260px;
   margin: 0 auto;
 }
 @media screen and (max-width: 1320px) {
@@ -5482,13 +5482,14 @@ img {
   overflow: hidden;
 }
 .check {
-  color: #00d084;
+  color: #151515;
   margin-right: 20px;
 }
 
 .title_grid {
   font-size: 20px;
   display: flex;
+  align-items: center;
   justify-content: space-between;
   column-gap: 30px;
 }
@@ -5876,4 +5877,10 @@ img {
   .accordion {
     width: 100%;
   }
+}
+.cons_btn_wrapper{
+  margin-top: 15px;
+}
+.cons_btn{
+  width: 100%;
 }

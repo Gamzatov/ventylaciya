@@ -299,8 +299,7 @@
 					<!-- <a href="default.htm" class="custom-logo-link" rel="home" aria-current="page"><img width="181"
 							height="106" src="wp-content/uploads/2022/06/logo.svg" class="custom-logo"
 							alt="Expert Project" /></a> -->
-					КЛІМАТИЧНІ <br>
-					РІШЕННЯ
+					<img class="logo" src="./assets/logo.png" alt="">
 				</div>
 				<div class="header__tagline">
 					<p style="font-weight: 500;"> Інженерні системі будь якоЇ складності під ключ</p>
@@ -321,6 +320,7 @@
 						<div class="contacts__numbers">
 							<a href="tel_3A+380731695775" class="contacts__tel">+380 73 169 5775</a>
 							<a href="tel_3A+380961695775" class="contacts__tel">+380 96 169 5775</a>
+							
 						</div>
 
 						<div class="contacts__socials">
@@ -350,10 +350,14 @@
 							</a>
 						</div>
 
-
+						
 
 					</div>
-
+					<div class="cons_btn_wrapper">
+						<a class="cons_btn" href="#form">
+							Замовити консультацію
+						</a>
+					</div>
 					<div class="contacts__toggle">
 						<svg height="25px" viewBox="0 0 48 48" width="25px" xmlns="http://www.w3.org/2000/svg">
 							<path d="M0 0h48v48h-48z" fill="none"></path>
@@ -370,22 +374,41 @@
 
 	<style>
 		.main {
-			background-image: url('./assets/preback.png');
-			
+			/* background-image: url('./assets/preback.png'); */
+
+			background: rgba(0, 224, 142, 1);
+			background: -moz-linear-gradient(top, rgba(0, 224, 142, 1) 0%, rgba(0, 224, 142, 1) 38%, rgba(255, 255, 255, 1) 72%, rgba(255, 255, 255, 1) 100%);
+			background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0, 224, 142, 1)), color-stop(38%, rgba(0, 224, 142, 1)), color-stop(72%, rgba(255, 255, 255, 1)), color-stop(100%, rgba(255, 255, 255, 1)));
+			background: -webkit-linear-gradient(top, rgba(0, 224, 142, 1) 0%, rgba(0, 224, 142, 1) 38%, rgba(255, 255, 255, 1) 72%, rgba(255, 255, 255, 1) 100%);
+			background: -o-linear-gradient(top, rgba(0, 224, 142, 1) 0%, rgba(0, 224, 142, 1) 38%, rgba(255, 255, 255, 1) 72%, rgba(255, 255, 255, 1) 100%);
+			background: -ms-linear-gradient(top, rgba(0, 224, 142, 1) 0%, rgba(0, 224, 142, 1) 38%, rgba(255, 255, 255, 1) 72%, rgba(255, 255, 255, 1) 100%);
+			background: linear-gradient(to bottom, rgba(0, 224, 142, 1) 0%, rgba(0, 224, 142, 1) 38%, rgba(255, 255, 255, 1) 72%, rgba(255, 255, 255, 1) 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00e08e', endColorstr='#ffffff', GradientType=0);
+
 
 		}
-
 
 		@media(max-width:600px) {
 			.main {
 				background-position: 10%;
-				background-image: url('./assets/bg/light.jpg');
+				background-color: #00d084;
+				background-image: url('./assets/bg/venty2.png');
+				background-size: contain;
+				background-repeat: no-repeat;
 			}
 
 			video {
 				display: none;
 			}
 
+		}
+		.cons_btn{
+			display: none;
+		}
+
+		.counter {
+			font-weight: bold;
+			font-size: 24px;
 		}
 	</style>
 	<div class="attention">
@@ -399,9 +422,9 @@
 		</div>
 	</div>
 	<section class="main">
-		<video playsinline autoplay muted loop poster="./assets/preback.png">
+		<!-- <video playsinline autoplay muted loop poster="./assets/preback.png">
 			<source src="./assets/backvid.mp4" type="video/mp4">
-		</video>
+		</video> -->
 		<div class="main__blur">
 		</div>
 		<style>
@@ -472,16 +495,19 @@
 
 		<div class="_container main__container top_header">
 			<div class="main__subtitle wow fadeInLeft text_grid">
-				<h2 class="head_title_mob" style="color: #151515;">Енергоефективні рішення для <span class="green_text">
-					</span>
-					<div class="container_text">
-						<div class="text">приватних</div>
+				<h2 class="head_title_mob" style="color: #151515;">Енергоефективні рішення <br>
+				
+					<!-- <div class="container_text">
+						<div class="text"></div>
 						<div class="text">комерційних</div>
 						<div class="text">промислових</div>
-					</div>
-					обєктів
+					</div> -->
+
 				</h2>
-				<h1 class="mob_font" style="font-weight: 600; margin-top:30px; text-align:center; color:#151515;">
+				<h3 style="color:#151515">
+					для приватних, комерційних, промислових обєктів
+				</h3>
+				<h1 class="mob_font" style="font-weight: 600; margin-top:0px; text-align:center; color:#151515;">
 					Під Ключ
 				</h1>
 			</div>
@@ -490,7 +516,7 @@
 					<div class="title_grid">
 						<div class="title_item left">
 							<p class="item_subtitle">
-								Системи
+								СИСТЕМИ
 							</p>
 							<span>
 								<ion-icon class="check" name="checkmark-circle-outline"></ion-icon>Кондиціювання,
@@ -505,9 +531,12 @@
 								<ion-icon class="check" name="checkmark-circle-outline"></ion-icon>Теплові Насоси
 							</span>
 						</div>
+						<div class="head_img">
+							<img src="./assets/bg/venty2.png" alt="">
+						</div>
 						<div class="title_item right">
 							<p class="item_subtitle">
-								Під Ключ
+								РЕАЛІЗАЦІЯ
 							</p>
 							<span>
 								<ion-icon class="check" name="checkmark-circle-outline"></ion-icon>Проектування,
@@ -540,6 +569,15 @@
 
 
 			</div>
+			<style>
+				.sub_grid>h3 {
+					font-weight: 500;
+				}
+				.head_img > img{
+					max-width: 400px;
+					width: 100%;
+				}
+			</style>
 
 			<div class="subtitle_header">
 				<div class="sub_grid">
@@ -630,17 +668,21 @@
 						justify-content: space-between;
 					}
 				</style>
-				<p>
+				<p class="mob_contain_text">
 					Квартири та Котеджи - Офіси - Торгівельні Центри - Кафе та Ресторани - Медичні Заклади - Промислові
 					Приміщення - Бассейни
 				</p>
 				<div style="text-align: center;">
 					<button class="_btn _btn-white main__btn">
-						замовити розрахунок
+						БЕЗКОШТОВНА
+						КОНЦЕПЦІЯ ПРОЄКТУ
 					</button>
 				</div>
 			</div>
 			<style>
+				.mob_contain_text{
+					margin-top: 20px;
+				}
 				.subtitle_header {
 					text-align: center;
 					color: #151515;
@@ -665,7 +707,7 @@
 
 		<div class="tab_wrapper">
 			<h2>
-				Системи
+				СИСТЕМИ
 			</h2>
 
 			<div class="accordion js-accordion">
@@ -721,7 +763,7 @@
 
 			<div class="tab_wrapper">
 				<h2>
-					Під Ключ
+					РЕАЛІЗАЦІЯ
 				</h2>
 				<div class="accordion js-accordion">
 					<div class="accordion__item js-accordion-item">
@@ -3634,8 +3676,7 @@
 			<div class="footer__wrapper">
 				<div class="footer__logo">
 					<a href="./index.html" class="custom-logo-link">
-						КЛІМАТИЧНІ <br>
-						РІШЕННЯ
+						<img class="logo" src="./assets/logo.png" alt="">
 					</a>
 				</div>
 				<div class="footer-contacts">
