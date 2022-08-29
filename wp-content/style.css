@@ -660,12 +660,15 @@ form input[type="submit"]:active {
 ._btn._btn-white {
   /* border-color: #151515; */
   color: #151515;
-  border: 1px solid #151515;
+  /* border: 1px solid #151515; */
+  color: #fff;
+  background-color: #00d084;
+  padding: 10px;
 }
 ._btn:hover {
   color: #151515;
   border: 1px solid #151515;
-  /* background: #00d084; */
+  background: #fff;
 }
 .header_social {
   background: #00d084;
@@ -1133,6 +1136,32 @@ select::placeholder {
     rgba(255, 255, 255, 0.7) 50%,
     rgba(255, 255, 255, 0.8) 100%
   );
+  background: -ms-linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.7) 50%,
+    rgba(255, 255, 255, 0.8) 100%
+  );
+  background: -o-linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.7) 50%,
+    rgba(255, 255, 255, 0.8) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.7) 50%,
+    rgba(255, 255, 255, 0.8) 100%
+  );
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.7) 50%,
+    rgba(255, 255, 255, 0.8) 100%
+  );
+  background: -ms-linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.7) 50%,
+    rgba(255, 255, 255, 0.8) 100%
+  );
+  
   margin-right: auto;
 }
 @media screen and (max-width: 1680px) {
