@@ -128,8 +128,8 @@ h2 {
   font-size: 28px;
   line-height: 34px;
   text-align: center;
-  font-family: "Montserrat", sans-serif;
-  text-transform: uppercase;
+  /* font-family: "Montserrat", sans-serif; */
+  /* text-transform: uppercase; */
   letter-spacing: 0.1em;
   font-weight: 700;
 }
@@ -156,10 +156,7 @@ h3 {
   font-size: 20px;
   line-height: 24px;
   font-weight: 600;
-  font-family: "Montserrat", sans-serif;
-  text-align: center;
   letter-spacing: 0.1em;
-  text-transform: uppercase;
 }
 @media screen and (max-width: 500px) {
   h3 {
@@ -5982,7 +5979,7 @@ img {
   font-family: 'Comfortaa', cursive !important;
   text-align: left;
   color: #151515;
-  font-size: 16px;
+  font-size: 18px;
 }
 .title_item > p{
   font-family: 'Comfortaa', cursive !important;
