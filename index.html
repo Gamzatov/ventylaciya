@@ -394,17 +394,19 @@
 
 		@media(max-width:600px) {
 			.main {
-				background-position-y:16%;
+				background-position-y: 16%;
 				background-color: linear-gradient(to bottom, rgba(142, 231, 198, 0.963) 0%, rgb(135, 238, 200) 38%, rgba(255, 255, 255, 1) 72%, rgba(255, 255, 255, 1) 100%);
 				/* background-image: url('./assets/bg/venty2.png'); */
-				
+
 				background-size: 100%;
 
 				background-repeat: no-repeat;
 			}
-			.mob_contain_text{
+
+			.mob_contain_text {
 				display: none;
 			}
+
 			video {
 				display: none;
 			}
@@ -618,7 +620,7 @@
 				</div>
 			</div>
 			<style>
-				.sub_grid > h3{
+				.sub_grid>h3 {
 					margin-bottom: 10px;
 				}
 
@@ -1016,7 +1018,8 @@
 			border-top-right-radius: 10px;
 			border-bottom-right-radius: 10px;
 		}
-		.five{
+
+		.five {
 			background: url('./assets/img/montage2.jpg');
 			background-size: cover;
 			background-position: center;
@@ -1123,10 +1126,17 @@
 			max-width: 150px;
 		}
 
+		.project_socials {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			gap: 20px;
+		}
+
 		@media(max-width:762px) {
 			.poster_grid {
 				flex-direction: column;
 			}
+
 
 			.package-list__item,
 			.small {
@@ -1536,7 +1546,7 @@
 				<div class="poster_info">
 					<div class="poster_inner">
 						<p class="inner_text">
-							Комплектація 
+							Комплектація
 						</p>
 					</div>
 				</div>
@@ -1772,7 +1782,7 @@
 				<div class="poster_info">
 					<div class="poster_inner">
 						<p class="inner_text">
-							Гарантійний та післягарантійний сервіс 
+							Гарантійний та післягарантійний сервіс
 						</p>
 					</div>
 				</div>
@@ -3831,7 +3841,32 @@
 
 	</script>
 	<style>
+		@media (max-width: 455px) {
+			.project_btns {
+				grid-template-columns: 1fr;
+				gap: 40px;
+			}
+		}
 
+		@media (max-width: 805px) {
+			.calculation-form {
+				width: 90%;
+			}
+
+			.project_wrapper {
+				grid-template-columns: 1fr;
+			}
+
+			.project_image>img {
+				max-width: 400px;
+				width: 100%;
+				text-align: center;
+			}
+
+			.project_image {
+				text-align: center;
+			}
+		}
 	</style>
 	<script>
 		var accordion = (function () {
