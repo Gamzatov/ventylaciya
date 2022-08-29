@@ -5537,15 +5537,22 @@ img {
 }
 .mob_item {
 }
-.sub_grid>h3 {
+.sub_grid > h3 {
   font-weight: 500;
 }
-
+/* .head_img {
+  background: url("../assets/bg/vet.png");
+  height: 500px;
+  background-size: cover;
+} */
+.head_img{
+  margin-right: -50px;
+}
 .head_img>img {
-  max-width: 600px;
+  max-width: 700px;
   width: 100%;
 }
-.head_items{
+.head_items {
   display: flex;
   justify-content: space-between;
 }
