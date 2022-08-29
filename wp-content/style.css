@@ -1,12 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
-  font-family: "Montserrat", sans-serif !important;
+  font-family: "Montserrat", sans-serif ;
 }
-
+.head_title_mob{
+  font-family: 'Comfortaa', cursive;
+  font-size: 24px;
+}
 a {
   text-decoration: none;
 }
@@ -1096,7 +1101,7 @@ select::placeholder {
 }
 .main {
   position: relative;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   height: 100%;
   background-repeat: no-repeat;
   background-position: 100% 0;
@@ -4756,9 +4761,7 @@ textarea {
   .header__wrapper {
     margin-top: 54px;
   }
-  .attention_flex > p {
-    font-size: 12px;
-  }
+  
 }
 @media (max-width: 505px) {
   .title_grid {
@@ -4852,6 +4855,9 @@ h3 {
 @media (max-width: 830px) {
   .koncept {
     grid-template-columns: 1fr;
+  }
+  .attention_flex > p {
+    font-size: 12px !important;
   }
 }
 .what_we_do_grid {
@@ -5916,4 +5922,75 @@ img {
   color: #151515;
   padding: 5px;
   
+}
+
+@media(max-width:505px) {
+  .title_grid {
+    flex-direction: column;
+  }
+}
+
+.attention {
+  padding: 5px;
+  color: #fff;
+  background-color: #cf2e2e;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.attention_flex {
+  max-width: 1240px;
+  margin: 0 auto;
+  column-gap: 20px;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.text_grid>h2 {
+  text-align: left;
+  font-size: 24px
+}
+
+.title_item {
+  color: #151515;
+}
+
+@media(max-width:762px) {
+  /* .text_grid>h2 {
+    text-align: left;
+  } */
+
+  .title_item>span {
+    font-weight: 400;
+  }
+}
+
+.item_subtitle {
+  font-size: 18px;
+  text-align: center;
+  font-weight: 700;
+  margin: 20px auto;
+}
+
+.green_text {
+  /* color: #00d084; */
+  font-size: 30px !important;
+  font-weight: 600;
+}
+.head_title_mob_subtitle{
+  font-family: 'Comfortaa', cursive !important;
+  text-align: left;
+  color: #151515;
+  font-size: 16px;
+}
+.title_item > p{
+  font-family: 'Comfortaa', cursive !important;
+  font-size: 20px;
+  text-align: center;
+}
+.item_subtitle{
+  font-family: 'Comfortaa', cursive !important;
+  font-size: 20px;
+  text-align: center;
 }
