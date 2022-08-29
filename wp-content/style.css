@@ -6012,6 +6012,7 @@ img {
     background: url('../assets/bg/vet.png');
     background-size: 100%;
     background-repeat: no-repeat;
+    z-index: 3;
   }
   .main_gradient{
     position: absolute;
@@ -6020,7 +6021,7 @@ img {
     height: 0;
     width: 100%;
     height: 100%;
-    z-index: 3;
+    z-index: 2;
     background: rgb(255, 255, 255, 0.6);
   }
   .title_item > span {
