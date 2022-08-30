@@ -1213,6 +1213,10 @@ select::placeholder {
     background-image: none;
     background-color: #fff;
   }
+  .title,
+  .set-task__title{
+    font-size: 2rem;
+  }
 }
 .main__wrapper {
   color: #fff;
