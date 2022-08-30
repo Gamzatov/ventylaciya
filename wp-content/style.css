@@ -968,8 +968,8 @@ select::placeholder {
     right: 0;
     -webkit-transition: all 0.7s ease 0s;
     transition: all 0.7s ease 0s;
-    background: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(20px);
+    background: #fff;
+    /* backdrop-filter: blur(20px); */
   }
 }
 @media screen and (max-width: 835px) {
@@ -6070,5 +6070,8 @@ img {
   }
   .text_grid{
     margin-top: -13px;
+  }
+  ._btn{
+    margin-top: 14px;
   }
 }
