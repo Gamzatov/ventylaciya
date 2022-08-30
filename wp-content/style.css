@@ -920,9 +920,9 @@ select::placeholder {
   align-items: center;
 }
 .header__logo {
-  margin-right: 30px;
   display: grid;
-  grid-template-columns: 1fr 1.2fr;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
   gap: 10px;
 }
 .logo_aditional{
@@ -1155,6 +1155,9 @@ select::placeholder {
 @media screen and (max-width: 1320px) {
   .contacts__toggle {
     display: block;
+    position: absolute;
+    top: 5px;
+    right: 5px;
     cursor: pointer;
     width: 38px;
     height: 38px;
@@ -6200,8 +6203,11 @@ h3 {
   .mob_font{
     font-size: 1.5rem;
   }
-  .header__logo{
+  /* .header__logo{
     grid-template-columns: 1fr;
+  } */
+  .logo_aditional{
+    font-size: 1.5rem;
   }
   /* .sub_grid > h3{
     text-align: left;
