@@ -35,8 +35,9 @@ a {
 p {
   /* font-weight: 300; */
 }
-.logo_aaditional {
+.logo_aditional {
   font-family: "Caveat", cursive;
+  color: red;
 }
 .grid_item_system {
   align-items: center;
@@ -894,6 +895,7 @@ select::placeholder {
 .logo {
   width: 100%;
   height: auto;
+  max-width: 250px;
 }
 
 .header {
@@ -919,6 +921,12 @@ select::placeholder {
 }
 .header__logo {
   margin-right: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 10px;
+}
+.logo_aditional{
+  font-size: 2rem;
 }
 .header__logo__mob {
   display: none;
@@ -2438,6 +2446,7 @@ select::placeholder {
 }
 .catalog-list__logo .logo {
   width: 100%;
+  max-width: 150px;
   height: auto;
 }
 .catalog-list__title {
