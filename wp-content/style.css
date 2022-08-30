@@ -20,12 +20,21 @@
 }
 .mob_font{
   color: #05935f;
+  line-height: 50px;
+}
+.set-task__title{
+  font-size: 3rem;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.title{
+  font-size: 3rem;
 }
 a {
   text-decoration: none;
 }
 p {
-  font-weight: 300;
+  /* font-weight: 300; */
 }
 
 body {
@@ -220,11 +229,57 @@ body {
 body._lock {
   overflow: hidden;
 }
+.font{
+  font-family: "Comfortaa", cursive;
+  color: #151515;
+}
+.give_text{
+  margin: 40px auto;
+  max-width: 800px;
+  padding: 20px;
+}
+.give_text > p{
+  margin: 20px auto;
+  font-size: 18px;
+  font-weight: 500;
+}
+.btn_wrapper{
+  margin: 0 auto;
+  text-align: center;
+}
+.taxes_grid{
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.list_item > p{
+  text-align: center;
+}
+.what_we_give {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+.eco{
+  background: #A4C2F4;
+  font-weight: bold !important;
+  padding: 10px;
+  color: #000;
+}
+.opt{
+  background: #6D9EEB;
+  padding: 10px;
+  font-weight: bold !important;
+}
+.prem{
+  background: #1155CC;
+  padding: 10px;
+  font-weight: bold !important;
+  color: #fff;
+}
 
 section,
 .package-way {
   padding: 60px 0;
-  background-color: #151515;
 }
 @media screen and (max-width: 1020px) {
   section,
@@ -1484,20 +1539,7 @@ select::placeholder {
   width: 100%;
   height: auto;
 }
-.set-task__wrapper {
-  position: relative;
-  z-index: 2;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
+
 .set-task__text__block {
   text-align: center;
   max-width: 1240px;
@@ -1570,29 +1612,17 @@ select::placeholder {
   }
 }
 .set-task__title {
-  font-size: 24px;
-  line-height: 29px;
-  font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   margin-bottom: 27px;
 }
 @media screen and (max-width: 1030px) {
   .set-task__title {
-    font-size: 20px;
-    line-height: 27px;
   }
 }
-@media screen and (max-width: 1030px) {
-  .set-task__title {
-    font-size: 20px;
-    line-height: 27px;
-  }
-}
+
 @media screen and (max-width: 830px) {
   .set-task__title {
-    font-size: 18px;
-    line-height: 27px;
     margin-bottom: 24px;
   }
 }
@@ -6058,6 +6088,17 @@ h3 {
   display: inline;
   margin-top: 30px;
 }
+.grid_item_system,
+.grid_item_realize{
+  display: grid;
+  margin: 30px auto;
+  grid-template-columns: 1fr .6fr .6fr .6fr .6fr;
+  gap: 30px;
+}
+.grid_item_text{
+  font-size: 30px;
+}
+
 
 @media (max-width: 600px) {
   .subtitle_header {
