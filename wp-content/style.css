@@ -5368,8 +5368,7 @@ img {
   background: url("./assets/img/list/montage.jpg");
   background-size: cover;
   background-position: center;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
+ 
 }
 .five {
   background: url("./assets/bg/etap-servis.jpg");
