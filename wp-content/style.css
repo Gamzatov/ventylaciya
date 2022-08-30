@@ -4286,7 +4286,7 @@ textarea {
 .footer-contacts__messenger svg path {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  fill: #fff;
+  fill: #111;
 }
 .footer-contacts__messenger:hover svg path {
   fill: rgba(141, 183, 39, 1);
