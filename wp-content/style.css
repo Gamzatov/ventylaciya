@@ -2022,6 +2022,7 @@ select::placeholder {
 }
 .economy-list__title {
   margin-bottom: 15px;
+  font-size: 18px;
 }
 @media screen and (max-width: 520px) {
   .economy-list__title {
