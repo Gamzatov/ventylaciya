@@ -1204,7 +1204,8 @@ select::placeholder {
 }
 @media screen and (max-width: 900px) {
   .main {
-    padding: 176px 0 107px 0;
+    padding: 16px 0 107px 0;
+    background-position: center;
   }
 }
 @media screen and (max-width: 770px) {
@@ -6081,7 +6082,6 @@ h3 {
     text-align: left;
   } */
   .main__blur {
-    background: url("../assets/bg/vet.png");
     background-size: 100%;
     background-repeat: no-repeat;
     z-index: 3;
@@ -6136,15 +6136,33 @@ h3 {
   background-size: 65%;
   background-position:50% 30%;
 }
-
+@media(max-width:1050px){
+  .head_title_mob{
+    font-size: 3rem;
+  }
+  .head_title_mob_subtitle {
+    font-size: 2rem;
+    margin-top: 12px;
+  }
+  .mob_font{
+    font-size: 2.5rem;
+  }
+}
 @media (max-width: 600px) {
   .subtitle_header {
     margin-top: -50px;
+  }
+  .give_text {
+    grid-template-columns: 1fr 1fr;
   }
 }
 @media (max-width: 400px) {
   .text_grid > h2 {
     font-size: 24px;
+  }
+  .give_text{
+    grid-template-columns: 1fr;
+    grid-area: 10px;
   }
   .head_title_mob_subtitle {
     font-size: 16px;
