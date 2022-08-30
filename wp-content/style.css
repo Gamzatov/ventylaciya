@@ -4884,6 +4884,7 @@ textarea {
   .sub_grid {
     flex-direction: column;
   }
+  
 }
 .sub_grid {
   display: flex;
@@ -6195,6 +6196,9 @@ h3 {
 @media (max-width: 600px) {
   .subtitle_header {
     margin-top: -50px;
+  }
+  .mob_font{
+    font-size: 1.5rem;
   }
   .header__logo{
     grid-template-columns: 1fr;
