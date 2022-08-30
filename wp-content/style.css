@@ -6196,6 +6196,9 @@ h3 {
   .subtitle_header {
     margin-top: -50px;
   }
+  .header__logo{
+    grid-template-columns: 1fr;
+  }
   /* .sub_grid > h3{
     text-align: left;
   } */
