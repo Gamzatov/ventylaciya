@@ -5672,6 +5672,9 @@ h3 {
   .sub_grid {
     flex-direction: column;
   }
+  .project_image{
+    display: none;
+  }
 }
 @media (max-width: 762px) {
   .text {
@@ -6203,9 +6206,9 @@ h3 {
   .mob_font{
     font-size: 1.5rem;
   }
-  /* .header__logo{
+  .header__logo{
     grid-template-columns: 1fr;
-  } */
+  }
   .logo_aditional{
     font-size: 1.5rem;
   }
