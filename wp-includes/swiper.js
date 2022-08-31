@@ -1,5 +1,5 @@
 let gallerySwiper = new Swiper('.gallery-slider.swiper', {
-    slidesPerView: 1,
+    slidesPerView: 2,
     spaceBetween: 80,
     autoHeight: true,
     loop: false,
@@ -216,4 +216,3 @@ var swiperDescription = new Swiper('.product-description__swiper', {
 
 
 
-})

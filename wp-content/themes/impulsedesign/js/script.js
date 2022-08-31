@@ -175,9 +175,9 @@ $(document).ready(function(){
     //     });
     // });
 
-    //siper-gallery
+    //swiper-gallery
     let gallerySwiper = new Swiper('.gallery-slider.swiper', {
-        slidesPerView: 1,
+        slidesPerView: 2,
         spaceBetween: 80,
         autoHeight: true,
         loop: false,
@@ -295,7 +295,7 @@ $(document).ready(function(){
 
     //gallery swiper
     var swiperGAlleryMini = new Swiper('.swiper-gallery-mini', {
-        slidesPerView: 5,
+        slidesPerView: 1,
         grid: {
           fill: 'row',
           rows: 1
