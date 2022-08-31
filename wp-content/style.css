@@ -4024,11 +4024,11 @@ textarea {
   background-color: #151515;
   border: 1px sold #151515;
 }
-.audit-form input[type="submit"] {
+/* .audit-form input[type="submit"] {
   background-color: #fff;
   border: 1px solid #151515;
   color: #151515;
-}
+} */
 .audit-form input[type="submit"]:hover {
   background: #09863b;
   color: #fff;
@@ -6965,7 +6965,7 @@ h3 {
 @media(max-width:400px){
   .ticker span {
     float: left;
-    width: 35%;
+    width: 40%;
   }
 }
 @media(max-width:340px){
@@ -6981,4 +6981,9 @@ h3 {
   .gallery-characteristic{
     margin-top: 103px;
   }
+}
+.wpcf7-submit{
+  background: linear-gradient(135deg, #09863b, #279039, #3d9a35, #50a431, #63ad2b, #77b623, #8bbf19, #a0c809);
+  color: #fff;
+  border: none;
 }
