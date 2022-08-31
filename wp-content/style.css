@@ -1138,6 +1138,7 @@ select::placeholder {
 .contacts__messenger svg path {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  color: #05935f !important;
 }
 .contacts__messenger:hover svg path {
   fill: #05935f;
@@ -1184,7 +1185,7 @@ select::placeholder {
     animation-timing-function: ease;
   }
   .contacts__toggle:hover svg path:last-child {
-    fill: #fff;
+    fill: #05935f;
   }
 }
 .types-of-work {
@@ -1352,12 +1353,12 @@ select::placeholder {
 .main__more__info svg:hover rect {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  stroke: rgba(141, 183, 39, 1);
+  stroke: #05935f;
 }
 .main__more__info svg:hover path {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  fill: rgba(141, 183, 39, 1);
+  fill: #05935f;
 }
 .main__container {
   position: relative;
@@ -2601,7 +2602,7 @@ select::placeholder {
 }
 
 .package-list__item:hover .package-list__info .package-list__label svg path {
-  fill: #fff;
+  fill: #05935f;
 }
 .package-list__item:hover .package-list__info .package-list__title,
 .package-list__item:hover .package-list__info .package-list__text {
@@ -4287,7 +4288,7 @@ textarea {
 .footer-contacts__messenger svg path {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  fill: #111;
+  fill: #05935f;
 }
 .footer-contacts__messenger:hover svg path {
   fill: rgba(141, 183, 39, 1);
