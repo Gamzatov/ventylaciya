@@ -6,7 +6,7 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Comfortaa", cursive !important;  
 }
 .head_title_mob {
   font-family: "Comfortaa", cursive;
@@ -4880,6 +4880,7 @@ textarea {
 .sub_grid {
   display: flex;
   text-align: center;
+  column-gap: 6px;
   justify-content: space-between;
 }
 .subtitle_header {
@@ -6267,7 +6268,7 @@ h3 {
   .head_title_mob {
     font-size: 28px;
     color: #09863b !important;
-    margin-top: 20px;
+    margin-top: 37px;
   }
   .head_title_mob_subtitle {
     font-size: 24px;
@@ -6975,4 +6976,9 @@ h3 {
 }
 .package-list__item{
   display: none;
+}
+@media(max-width:762px){
+  .gallery-characteristic{
+    margin-top: 103px;
+  }
 }
