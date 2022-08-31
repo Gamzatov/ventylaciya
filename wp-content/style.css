@@ -6939,7 +6939,7 @@ h3 {
 }
 .ticker span {
   float: left;
-  width: 50%;
+  width: 40%;
 }
 @keyframes ticker {
   0% { left: 0; }
