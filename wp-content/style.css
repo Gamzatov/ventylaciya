@@ -5391,6 +5391,7 @@ img {
 .descr,
 .descr2 {
   opacity: 0;
+  display: none;
   margin: 0px auto;
   padding-top: 30%;
   background: rgb(0, 0, 0, 0.6);
@@ -6655,6 +6656,7 @@ h3 {
   opacity: 1;
   position: absolute;
   top: 0%;
+  display: block;
   left: 0%;
   transition: .2s;
   border-radius: 3px;
@@ -6939,7 +6941,7 @@ h3 {
 }
 .ticker span {
   float: left;
-  width: 39%;
+  max-width: 69%;
 }
 @keyframes ticker {
   0% { left: 0; }
