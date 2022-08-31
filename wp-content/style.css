@@ -5733,6 +5733,27 @@ h3 {
   z-index: 9999;
   left: 0;
 }
+.give_text_sec > p{
+  margin: 15px auto;
+  position: relative;
+  padding: 10px;
+}
+.give_text_sec > p:before{
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 5%;
+  height: 1px;
+  width: 90%;
+  color: #000;
+  background-color: #eaeaea;
+
+}
+ .star_icon {
+  color: #05935f;
+  font-size: 20px;
+  padding-right: 10px;
+}
 
 .calculation-form {
   position: absolute;
