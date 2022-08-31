@@ -3485,8 +3485,8 @@ select::placeholder {
   width: 100%;
   margin: 0 auto;
   overflow: hidden;
-  padding: 80px;
-  margin: -80px;
+  /* padding: 80px; */
+  /* margin: -80px; */
   position: relative;
   z-index: 2;
 }
@@ -3688,7 +3688,7 @@ select::placeholder {
 }
 .gallery-slider__img img {
   width: 100%;
-  height: 100%;
+  height: 400px;
   -o-object-fit: cover;
   object-fit: cover;
 }
@@ -5037,6 +5037,9 @@ h3 {
 }
 .small {
   width: 30%;
+}
+.gallery-characteristic{
+  margin-top: 20px;
 }
 .small_btn {
   padding: 20px;
