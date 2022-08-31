@@ -916,7 +916,7 @@ select::placeholder {
   gap: 10px;
 }
 .logo_aditional {
-  font-size: 2rem;
+  font-size: 20px;
 }
 .header__logo__mob {
   display: none;
