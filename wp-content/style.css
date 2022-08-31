@@ -4893,7 +4893,7 @@ textarea {
   margin-top: 30px;
   font-family: c;
   border: 1px solid #fff;
-  font-family: "Comfortaa", cursive;
+  font-family: "Comfortaa", cursive !important;
   /* background-color: #09863b; */
 }
 .koncept {
@@ -5044,7 +5044,9 @@ h3 {
   background: linear-gradient(135deg, #a0c809, #8bbf19, #77b623, #63ad2b, #50a431, #3d9a35, #279039, #09863b);
   transition: .3s;
   margin-top: 20px;
-  max-width: 228px;
+  font-family: "Comfortaa", cursive !important;
+  max-width: 280px;
+  text-transform: uppercase;
   margin: 0 auto;
   color: #fff;
   text-align: center;
