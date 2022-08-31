@@ -408,9 +408,7 @@
 				background-repeat: no-repeat;
 			} */
 
-			.mob_contain_text {
-				display: none;
-			}
+		
 
 			video {
 				display: none;
@@ -469,7 +467,7 @@
 									</h3>
 								</div>
 								<div>
-									<h1 class="mob_font" style="font-weight: bold; text-align:center;">
+									<h1 class="mob_font" style="font-weight: bold; ">
 										Під Ключ
 									</h1>
 								</div>
@@ -525,19 +523,20 @@
 			<div class="subtitle_header">
 				<div class="sub_grid">
 					<h3>
-						<ion-icon class="color_icons" name="star-outline"></ion-icon>Більше <span class="counter">
-							10</span> років досвіду
+						<ion-icon class="color_icons" name="star-outline"></ion-icon> <span class="counter">
+							10 </span><span class="plus">+</span><br> років досвіду
 					</h3>
 					<h3>
 						<ion-icon class="color_icons" name="briefcase-outline"></ion-icon>
 
 						<span class="counter">
-							600</span> +
+							600</span><span class="plus">+</span>
+						<br>
 						виконаних об'єктів
 					</h3>
 					<h3>
 						<ion-icon class="color_icons" name="file-tray-stacked-outline"></ion-icon>
-						<span class="counter"> 2900</span>+ встановленого
+						<span class="counter"> 2900</span><span class="plus">+</span><br> встановленого
 						обладнання
 					</h3>
 
@@ -558,6 +557,18 @@
 					.head_title_mob {
 						text-align: left;
 					}
+
+					.counter {
+						color: #0693e3;
+						font-size: 2rem;
+						font-weight: bold;
+					}
+
+					.plus {
+						color: #0693e3;
+						font-size: 2rem;
+						font-weight: bold;
+					}
 				</style>
 				<style>
 					.sub_grid {
@@ -566,11 +577,7 @@
 						justify-content: space-between;
 					}
 				</style>
-				<p class="mob_contain_text">
-					<span class="bold"> Квартири та Котеджи</span> - Офіси - <span class="bold"> Торгівельні
-						Центри</span> - Кафе та Ресторани - <span class="bold">Медичні Заклади</span> - Промислові
-					об'єкти
-				</p>
+
 				<div style="text-align: center;">
 					<button class="_btn _btn-white main__btn">
 						БЕЗКОШТОВНА
@@ -584,135 +591,6 @@
 		</div>
 
 	</section>
-	<!-- <div class="setup">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<h2 class="setup--title">СИСТЕМИ</h2>
-				</div>
-				<div class="col-md-6 hao_cond">
-					<div class="setup__block setup__block--c1 -big"
-						>
-						<div class="setup__block--cont">
-							<h3>Кондиціювання</h3>
-						</div>
-						<div class="setup__block--image">
-						
-						</div>
-					</div>
-				</div>
-				<style>
-					.line_left {
-						position: relative;
-					}
-
-					.line_left:after {
-						content: '';
-						width: 20px;
-						height: 1px;
-						background-color: #111;
-						position: absolute;
-						left: -20px;
-						bottom: 44px;
-						z-index: 10;
-
-					}
-				</style>
-				<div class="col-md-4 line_left vent_sub">
-					<div class="setup__block setup__block--c2" >
-						<div class="setup__block--cont">
-							<h3>Вентиляція</h3>
-
-						</div>
-						<div class="setup__block--image">
-					
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4 heating_sub">
-					<div class="setup__block setup__block--c3 -line"
-						>
-						<div class="setup__block--cont">
-							<h3>Опалення</h3>
-
-						</div>
-						<div class="setup__block--image">
-					
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 line_left nasos_sub">
-					<div class="setup__block setup__block--c4 -line"
-						>
-						<div class="setup__block--cont">
-							<h3>Теплові Насоси</h3>
-
-						</div>
-						<div class="setup__block--image">
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-	</div> -->
-
-	<!-- <section class="mob">
-
-
-		<div class="tab_wrapper">
-			<div class="set-task__text__block">
-				<h2 class="title">
-					Наші рішення </h2>
-				<h3 class="set-task__title">
-					ПІД КЛЮЧ
-
-				</h3>
-			</div>
-
-			<div class="accordion js-accordion">
-				<div class="accordion__item js-accordion-item active">
-					<div class="accordion-header js-accordion-header">Кондиціювання</div>
-					<div class="accordion-body js-accordion-body">
-						<div class="accordion-body__contents cond">
-
-						</div>
-
-					</div </div>
-					<div class="accordion__item js-accordion-item ">
-						<div class="accordion-header js-accordion-header">Вентиляція</div>
-						<div class="accordion-body js-accordion-body">
-							<div class="accordion-body__contents vent">
-
-							</div>
-
-						</div>
-					</div>
-					<div class="accordion__item js-accordion-item">
-						<div class="accordion-header js-accordion-header">Опалення</div>
-						<div class="accordion-body js-accordion-body">
-							<div class="accordion-body__contents heat">
-
-							</div>
-
-						</div>
-					</div>
-					<div class="accordion__item js-accordion-item">
-						<div class="accordion-header js-accordion-header">Теплові насоси</div>
-						<div class="accordion-body js-accordion-body">
-							<div class="accordion-body__contents nasos">
-
-							</div>
-
-						</div>
-					</div>
-				</div>
-	</section> -->
-
-
-
 	<section class="set-task">
 		<div class="set-task__bg skrollable skrollable-between" data-top-bottom="transform: translateY(10px);"
 			data-bottom-top="transform: translateY(-50px);">
@@ -729,44 +607,73 @@
 
 					</h3>
 				</div>
-				<div class="grid_items_wrapper">
-					<div class="item_system grid_item_text">
-						<!-- СИСТЕМИ -->
+				<p class="mob_contain_text font" style="text-align: center;">
+					Квартири та Котеджи - Офіси - Торгівельні Центри - Кафе та Ресторани- Готелі- Медичні Заклади -
+					Промислові об'єкти
+				</p>
+				<div class="poster_grid">
+					<div class="posterT cond">
+						<div class="descr">
+							<div class="descr_img">
+								<p>
+									
+								</p>
+							</div>
+						</div>
+						<div class="poster_info">
+							<div class="poster_inner">
+								<p class="inner_text_two">
+									Кондиціювання
+								</p>
+							</div>
+						</div>
 					</div>
-					<div class="grid_item_system">
-
-						<div class="item_condition grid_item">
-							<div class="item_img">
-								<img class="show_img" src="./assets/img/cond.jpg" alt="">
+					<div class="posterT vent">
+						<div class="descr">
+							<div class="descr_img">
+								<p>
+									
+								</p>
 							</div>
-							<p class="item_title">
-								Кондиціювання
-							</p>
-
 						</div>
-						<div class="item_vent grid_item">
-							<div class="item_img">
-								<img class="show_img" src="./assets/img/vent_sub.jpg" alt="">
+						<div class="poster_info">
+							<div class="poster_inner">
+								<p class="inner_text_two">
+									Вентиляція
+								</p>
 							</div>
-							<p class="item_title">
-								Вентиляція
-							</p>
 						</div>
-						<div class="item_heating grid_item">
-							<div class="item_img">
-								<img class="show_img" src="./assets/img/heating_sub.jpg" alt="">
+					</div>
+					<div class="posterT heat">
+						<div class="descr">
+							<div class="descr_img">
+								<p>
+									
+								</p>
 							</div>
-							<p class="item_title">
-								Опалення
-							</p>
 						</div>
-						<div class="item_nasos grid_item">
-							<div class="item_img">
-								<img class="show_img" src="./assets/img/nasos_sub.jpg" alt="">
+						<div class="poster_info">
+							<div class="poster_inner">
+								<p class="inner_text_two">
+									Опалення
+								</p>
 							</div>
-								<p class="item_title">
+						</div>
+					</div>
+					<div class="posterT nasos">
+						<div class="descr">
+							<div class="descr_img">
+								<p>
+									
+								</p>
+							</div>
+						</div>
+						<div class="poster_info">
+							<div class="poster_inner">
+								<p class="inner_text_two">
 									Теплові Насоси
 								</p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -774,268 +681,7 @@
 		</div>
 	</section>
 	<style>
-		.card__button {
-			text-align: center;
-		}
-
-		.what_we_do_grid {
-			display: grid;
-			/* text-align: center; */
-			grid-template-columns: 1fr 1fr;
-			justify-content: space-around;
-			gap: 0px;
-			background-color: #5A6988;
-			border-radius: 3px;
-			max-width: 960px;
-			margin: 20px auto;
-		}
-
-
-		.what_we_do {
-			padding-left: 30px;
-			background-size: cover !important;
-			padding-right: 30px;
-			background: url('./bg-light-blue-wIEu.png');
-			padding-bottom: 166px;
-		}
-
-		.what_we_do>h2 {
-			margin: 30px auto;
-		}
-
-		.do_item {
-			padding: 20px;
-			align-items: center;
-		}
-
-		.left_i {
-			border-right: 2px solid #eaeaea;
-		}
-
-		.poster {
-			position: relative;
-			margin: 10px auto;
-			height: 450px;
-			transition: .3s;
-			width: 25%;
-		}
-
-		.descr,
-		.descr2 {
-			opacity: 0;
-			margin: 0px auto;
-			padding-top: 30%;
-			background: rgb(0, 0, 0, .6);
-			/* backdrop-filter: blur(10px); */
-			height: 100%;
-			padding: 20px;
-			color: #fff;
-			transition: .2s;
-			-moz-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
-			-webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
-			box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
-		}
-
-		.poster:hover .descr {
-			opacity: 1;
-			position: absolute;
-			top: 0%;
-			left: 0%;
-			transition: .2s;
-			border-radius: 3px;
-			z-index: 3;
-			width: 100%;
-		}
-
-		.poster:hover .inner_text {
-			color: #fff;
-			font-size: 20px;
-		}
-
-		.poster:hover .poster_inner:before {
-			background: #fff;
-		}
-
-		.poster_grid {
-			display: flex;
-			max-width: 1150px;
-			margin: 0 auto;
-			grid-template-columns: 1fr 1fr 1fr 1fr;
-		}
-
-		.one {
-			background: url('./assets/img/list-two/concept.jpg');
-			background-size: cover;
-			background-position: center;
-			border-top-left-radius: 10px;
-			border-bottom-left-radius: 10px;
-
-		}
-
-		.two {
-			background: url('./assets/img/list-two/project.jpg');
-			background-size: cover;
-			background-position: center;
-		}
-
-		.three {
-			background: url('./assets/img/list-two/three.jpg');
-			background-size: cover;
-			background-position: center;
-		}
-
-		.four {
-			background: url('./assets/img/list-two/four.jpg');
-			background-size: cover;
-			background-position: center;
-			border-top-right-radius: 10px;
-			border-bottom-right-radius: 10px;
-		}
-
-		.five {
-			background: url('./assets/img/montage2.jpg');
-			background-size: cover;
-			background-position: center;
-			border-top-right-radius: 10px;
-			border-bottom-right-radius: 10px;
-		}
-
-		.descr>p {
-			font-size: 20px;
-		}
-
-		.descr {
-			padding-top: 100px;
-		}
-
-		.poster:hover {
-			height: 450px;
-			width: 42%;
-		}
-
-		.descr_img>p {
-			font-size: 60px;
-			color: #34a853;
-			margin: 30px auto;
-			font-weight: bold;
-		}
-
-		.descr_img {
-			text-align: center;
-		}
-
-		.one:before {
-			content: '01';
-			position: absolute;
-			bottom: -10px;
-			left: 30px;
-			z-index: 999;
-			color: #34a853;
-			font-size: 68px;
-			font-weight: bold;
-		}
-
-		.two:before {
-			content: '02';
-			position: absolute;
-			bottom: -10px;
-			left: 30px;
-			z-index: 999;
-			font-weight: bold;
-			color: #34a853;
-			font-size: 60px;
-		}
-
-		.three:before {
-			content: '03';
-			position: absolute;
-			bottom: -10px;
-			left: 30px;
-			font-weight: bold;
-			z-index: 999;
-			color: #34a853;
-			font-size: 60px;
-		}
-
-		.four:before {
-			content: '04';
-			font-weight: bold;
-			position: absolute;
-			bottom: -10px;
-			left: 30px;
-			z-index: 999;
-			color: #34a853;
-			font-size: 60px;
-		}
-
-
-		.poster_info {
-			position: relative;
-			height: 100px;
-		}
-
-		.poster_inner {
-			position: absolute;
-			max-width: 250px;
-			top: 46%;
-			left: 30px;
-			z-index: 4;
-			transition: .2s;
-			padding-top: 20px;
-		}
-
-		.poster_inner:before {
-			content: '';
-			position: absolute;
-			top: 0;
-			width: 70px;
-			height: 2px;
-			background: #000;
-		}
-
-		.inner_text {
-			color: #111;
-			font-weight: 500;
-			max-width: 150px;
-		}
-
-		.project_socials {
-			display: grid;
-			grid-template-columns: 1fr 1fr 1fr;
-			gap: 20px;
-		}
-
-		@media(max-width:762px) {
-			.poster_grid {
-				flex-direction: column;
-			}
-
-
-			.package-list__item,
-			.small {
-				width: 100%;
-			}
-
-			.poster {
-				width: 100%;
-				border-radius: 3px;
-				margin: 60px auto;
-			}
-
-			.inner_text {
-				width: 100%;
-				max-width: none;
-			}
-
-			.poster_inner {
-				width: 100%;
-				max-width: none;
-			}
-
-			.poster:hover {
-				width: 100%;
-			}
-		}
+	
 	</style>
 	<section class="what_we_give">
 		<h2 class="font we_give">
