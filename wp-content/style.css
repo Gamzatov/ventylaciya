@@ -6918,3 +6918,30 @@ h3 {
   animation: scroll 15s infinite linear;
 
 }
+.ticker {
+  height: 25px;
+  width: 100vw;
+  min-width: 1300px;
+  color: #111;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+.ticker div {
+  display: inline-block;
+  width: 200%;
+  height: 25px;
+  position: absolute;
+  overflow: hidden;
+  animation: ticker 10s linear infinite;
+}
+.ticker span {
+  float: left;
+  width: 50%;
+}
+@keyframes ticker {
+  0% { left: 0; }
+  100% { left: -100%; }
+}
