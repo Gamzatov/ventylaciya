@@ -1156,7 +1156,7 @@ select::placeholder {
     transition: all 0.3s ease;
     padding: 5px;
     border-radius: 4px;
-    background: #09863b;
+    background: linear-gradient(135deg, #09863b, #279039, #3d9a35, #50a431, #63ad2b, #77b623, #8bbf19, #a0c809);
   }
   .cons_btn_wrapper {
     display: none;
@@ -6063,7 +6063,7 @@ h3 {
   display: block;
   border-radius: 3px;
   text-align: center;
-  background-color: #09863b;
+  background: linear-gradient(135deg, #09863b, #279039, #3d9a35, #50a431, #63ad2b, #77b623, #8bbf19, #a0c809);
   color: #fff;
   padding: 5px;
 }
