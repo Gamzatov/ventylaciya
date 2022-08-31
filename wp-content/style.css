@@ -6935,7 +6935,7 @@ h3 {
   height: 25px;
   position: absolute;
   overflow: hidden;
-  animation: ticker 10s linear infinite;
+  animation: ticker 15s linear infinite;
 }
 .ticker span {
   float: left;
