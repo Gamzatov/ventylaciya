@@ -11,7 +11,7 @@
 .head_title_mob {
   font-family: "Comfortaa", cursive;
   font-size: 4rem;
-  line-height: 50px;
+  line-height: 100%;
 }
 .head_title_mob_subtitle {
   font-size: 2.5rem;
@@ -20,6 +20,7 @@
 .mob_font {
   color: #05935f;
   line-height: 50px;
+  text-transform: unset;
 }
 .set-task__title {
   font-size: 2.5rem;
@@ -1153,7 +1154,7 @@ select::placeholder {
   .contacts__toggle {
     display: block;
     position: absolute;
-    top: 5px;
+    top: 35px;
     right: 5px;
     cursor: pointer;
     width: 38px;
@@ -5749,6 +5750,10 @@ h3 {
   background-color: #eaeaea;
 
 }
+.sub_grid{
+  max-width: 1077px;
+  margin: 0 auto;
+}
  .star_icon {
   color: #05935f;
   font-size: 20px;
@@ -6050,6 +6055,9 @@ h3 {
 .cons_btn {
   width: 100%;
   color: #151515;
+  display: block;
+  border-radius: 3px;
+  text-align: center;
   background-color: #34a853;
   color: #fff;
   padding: 5px;
@@ -6105,7 +6113,7 @@ h3 {
   color: #151515;
 }
 .mob_font {
-  font-size: 3rem;
+  font-size: 4rem;
   margin-top: 40px;
   font-family: "Comfortaa", cursive;
 }
@@ -6219,7 +6227,6 @@ h3 {
   }
   .head_title_mob_subtitle {
     font-size: 2rem;
-    margin-top: 12px;
   }
   .mob_font {
     font-size: 2.5rem;
@@ -6229,12 +6236,15 @@ h3 {
   .subtitle_header {
     margin-top: -50px;
   }
+  .header{
+    padding: 0;
+  }
   .taxes_grid{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
   }
   .mob_font {
-    font-size: 1.5rem;
+    font-size: 28px;
   }
   .header__logo {
     grid-template-columns: 1fr;
@@ -6274,7 +6284,6 @@ h3 {
   }
   .head_title_mob_subtitle {
     font-size: 16px;
-    margin-top: 20px;
   }
   .main__blur {
     background-position: center 3%;
