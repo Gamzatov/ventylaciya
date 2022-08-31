@@ -6973,3 +6973,6 @@ h3 {
     font-size: 27px;
   }
 }
+.package-list__item{
+  display: none;
+}
