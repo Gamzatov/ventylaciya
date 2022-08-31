@@ -28,7 +28,8 @@
   margin-top: 20px;
 }
 .title {
-  font-size: 3rem;
+  font-size: 2rem;
+  line-height: 100%;
 }
 a {
   text-decoration: none;
@@ -1584,7 +1585,7 @@ select::placeholder {
   font-family: "Montserrat", sans-serif;
   /* max-width: 800px; */
 
-  margin: 0 auto 60px;
+  margin: 0 auto;
 }
 @media screen and (max-width: 830px) {
   .set-task__text__block {
@@ -4443,8 +4444,8 @@ textarea {
   cursor: auto;
   font-size: 38px;
   font-weight: bold;
-  text-transform: uppercase;
-  line-height: 1.2;
+  /* text-transform: uppercase; */
+  line-height: 100%;
   margin-bottom: 40px;
   letter-spacing: 2px;
 }
@@ -4884,7 +4885,7 @@ textarea {
 
 @media (max-width: 600px) {
   .sub_grid {
-    flex-direction: column;
+    /* flex-direction: column; */
   }
 }
 .sub_grid {
@@ -5666,7 +5667,7 @@ h3 {
 }
 @media (max-width: 600px) {
   .sub_grid {
-    flex-direction: column;
+    /* flex-direction: column; */
   }
   .project_image {
     display: none;
@@ -6584,6 +6585,11 @@ h3 {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
 }
+.poster:hover .third_sec{
+  color: #fff;
+  top: 20px;
+
+}
 
 @media(max-width:762px) {
   .poster_grid {
@@ -6785,6 +6791,10 @@ h3 {
 .second_sec{
   top:-50px;
 }
+.third_sec{
+  top: -94px;
+  color: #111;
+}
 @media(max-width:762px) {
   .poster_grid {
     flex-direction: column;
@@ -6815,4 +6825,93 @@ h3 {
   .posterT:hover {
     width: 100%;
   }
+}
+@-webkit-keyframes scroll {
+
+  0% {
+
+      -webkit-transform: translate(0, 0);
+
+      transform: translate(0, 0);
+
+  }
+
+  100% {
+
+      -webkit-transform: translate(-100%, 0);
+
+      transform: translate(-100%, 0)
+
+  }
+
+}
+
+
+
+@-moz-keyframes scroll {
+
+  0% {
+
+      -moz-transform: translate(0, 0);
+
+      transform: translate(0, 0);
+
+  }
+
+  100% {
+
+      -moz-transform: translate(-100%, 0);
+
+      transform: translate(-100%, 0)
+
+  }
+
+}
+
+
+
+@keyframes scroll {
+
+  0% {
+
+      transform: translate(0, 0);
+
+  }
+
+  100% {
+
+      transform: translate(-100%, 0)
+
+  }
+
+}
+
+
+
+.marquee {
+
+  display: block;
+
+  width: 200%;
+
+  white-space: nowrap;
+
+  overflow: visible;
+
+}
+
+
+
+.marquee span {
+
+  display: inline-block;
+
+  /* padding-left: 100%; */
+
+  -webkit-animation: scroll 15s infinite linear;
+
+  -moz-animation: scroll 15s infinite linear;
+
+  animation: scroll 15s infinite linear;
+
 }
