@@ -531,11 +531,11 @@
 
 			<div class="subtitle_header">
 				<div class="sub_grid">
-					<h3 class="">
+					<h3 class="mob_int">
 						<ion-icon class="color_icons" name="star-outline"></ion-icon> <span class="counter">
 							10 </span><span class="plus">+</span><br> років досвіду
 					</h3>
-					<h3>
+					<h3  class="mob_int">
 						<ion-icon class="color_icons" name="briefcase-outline"></ion-icon>
 
 						<span class="counter">
@@ -543,7 +543,7 @@
 						<br>
 						виконаних об'єктів
 					</h3>
-					<h3>
+					<h3  class="mob_int">
 						<ion-icon class="color_icons" name="file-tray-stacked-outline"></ion-icon>
 						<span class="counter"> 2900</span><span class="plus">+</span><br> встановленого
 						обладнання
@@ -567,12 +567,7 @@
 						text-align: left;
 					}
 
-					.counter {
-						color: #0693e3;
-						font-size: 2rem;
-						font-weight: bold;
-					}
-
+				
 					.plus {
 						color: #0693e3;
 						font-size: 2rem;
@@ -765,8 +760,8 @@
 
 		</div>
 		<div class="give_taxes">
-			<h3 style="text-align:center">
-				Запропонуемо концепції реалізації проекта в залежності від побажання замовника
+			<h3 class="" style="text-align:center; font-weight: bold;color: #000;">
+				Запропонуємо концепції реалізації проекта в залежності від побажання замовника
 			</h3>
 			<div class="taxes_grid">
 				<div class="list_item eco">
@@ -1428,21 +1423,7 @@
 						display: none;
 					}
 
-					.project_wrapper {
-						display: grid;
-						grid-template-columns: 1fr 0.7fr;
-						align-items: center;
-						gap: 40px;
-					}
-
-					.project_btns {
-						display: grid;
-						grid-template-columns: 1fr 1fr;
-						align-items: center;
-						color: #111;
-						margin-top: 30px;
-					}
-
+		
 
 
 					.project_socials>a {
@@ -1459,36 +1440,24 @@
 				</style>
 				<div class="project_wrapper">
 					<div class="project_text">
-						<h2 class="title calculation__title wow fadeInUp proj" data-wow-duration=".3s"
+						<h2 class="title calculation__title wow fadeInUp proj font" data-wow-duration=".3s"
 							data-wow-delay=".1s" style="font-size:24px">
 							Надішліть архитектурний проект
 						</h2>
-						<p>
+						<p style="text-align: center;" class="font">
 							І ми зв'яжемся з Вами для уточнення побажань
 						</p>
 						<div class="project_btns">
-							<div>
+							<div style="margin-top: 20px;">
 								<a href="#form" class="small_btn">
 									Замовити розрахунок
 								</a>
 							</div>
-							<!-- <div class="project_socials">
-								<a href="">
-									Telegram
-								</a>
-								<a href="">
-									Viber
-								</a>
-								<a href="mailto:info@expert-project.com.ua">
-									E-mail
-								</a>
-							</div> -->
+						
 
 						</div>
 					</div>
-					<div class="project_image">
-						<img src="./assets/img/laptop.png" alt="">
-					</div>
+					
 				</div>
 
 				<div class="calculation__form__container pop_up" id="pop">
@@ -1567,7 +1536,7 @@
 
 	<section class="brands">
 		<div class="max_width">
-			<h2>
+			<h2 class="font">
 				Бренди, котрі нам довіряють
 			</h2>
 
@@ -1629,8 +1598,8 @@
 		<div class="_container">
 			<div class="gallery__wrapper">
 				<div class="gallery__title__container title__container">
-					<h2 class="gallery__title title wow fadeInUp" data-wow-duration=".3s" data-wow-delay=".1s">
-						Галерея Робіт </h2>
+					<h2 class="gallery__title title wow fadeInUp font" data-wow-duration=".3s" data-wow-delay=".1s">
+						ВИКОНАНІ ОБ'ЄКТИ </h2>
 					<!-- <p class="subtitle gallery__subtitle wow fadeInUp" data-wow-duration=".3s" data-wow-delay=".3s">
 						Obserwuj i decyduj </p> -->
 				</div>
@@ -2884,10 +2853,10 @@
 					</div>
 				</div>
 
-				<h2>
+				<h2 class="font">
 					ЗАМІСТЬ ВІДГУКІВ МИ ПРОПОНУЄМО ВАМ
 				</h2>
-				<p style="text-align: center;">
+				<p style="text-align: center;" class="font">
 					Відвідати об’єкти, де працюють наші інженерні системи
 				</p>
 				<div style="margin-top:20px; display: block; min-width: 200px;">
@@ -2901,9 +2870,9 @@
 		<div class="_container">
 			<div class="economy__wrapper">
 				<div class="economy__title__container title__container">
-					<h2 class=" economy__title wow fadeInUp" data-wow-duration=".3s" data-wow-delay=".1s">
+					<h2 class=" economy__title wow fadeInUp font" data-wow-duration=".3s" data-wow-delay=".1s">
 						НА ЧОМУ ВИ МОЖЕТЕ ЗАОЩАДИТИ </h2>
-					<p class="economy__subtitle subtitle">
+					<p class="economy__subtitle subtitle font">
 						Завдяки нашим досвіду і підходу до виконання задач </p>
 				</div>
 
@@ -2924,7 +2893,7 @@
 									<p>1</p>
 								</div>
 								<div class="economy-list__text__block">
-									<h4 class=" economy-list__title">
+									<h4 class=" economy-list__title font">
 										БЕЗКОШТОВНА<br />
 										КОНЦЕПЦІЯ ПРОЄКТУ </h4>
 									<p class="economy-list__text">
@@ -2937,7 +2906,7 @@
 									<p>2</p>
 								</div>
 								<div class="economy-list__text__block">
-									<h4 class=" economy-list__title">
+									<h4 class=" economy-list__title font">
 										ЗНИЖЕННЯ<br />
 										ПОТОЧНИХ ВИТРАТ </h4>
 									<p class="economy-list__text">
@@ -2953,7 +2922,7 @@
 									<p>3</p>
 								</div>
 								<div class="economy-list__text__block">
-									<h4 class=" economy-list__title">
+									<h4 class=" economy-list__title font">
 										МОЖЛИВІСТЬ <br> ПОЕТАПНОЇ ОПЛАТИ</h4>
 									<p class="economy-list__text">
 										Ви можете вносити кошти за кожен етап проекту, а не сплачувати всю вартість
@@ -2965,7 +2934,7 @@
 									<p>4</p>
 								</div>
 								<div class="economy-list__text__block">
-									<h4 class=" economy-list__title">
+									<h4 class=" economy-list__title font">
 										ЗМЕНШЕННЯ<br />
 										КАПІТАЛЬНИХ ВИТРАТ </h4>
 									<p class="economy-list__text">
@@ -2976,6 +2945,10 @@
 						</div>
 					</div>
 				</div>
+				<h4 class="font" style="margin-bottom: 40px;">
+					УВАГА! Ми ніколи не намагаємося зменшити бюджет проекту <br>
+					за рахунок зниження якості обладнання, матеріалів та послуг!
+				</h4>
 
 				<!-- <div class="economy__warning">
 					<p>
@@ -2985,22 +2958,17 @@
 			</div>
 		</div>
 	</section>
-	<style>
-		.split_color {
-			background: url('./bg-light-blue-wIEu.png');
-			background-size: cover;
-		}
-	</style>
+
 	<section class="package split_color">
 		<div class="_container">
-			<h2 class=" package-list__title">
+			<h2 class=" package-list__title font">
 				ЯК ПРАЦЮЄ ПАКЕТ «ВСЕ ПІД КЛЮЧ»
 			</h2>
-			<div class="package-list__text">
+			<!-- <div class="package-list__text font">
 				<p>
 					ЯК ПРАЦЮЄ ПАКЕТ «ВСЕ ПІД КЛЮЧ» Перевірений роками, результативний алгоритм
 				</p>
-			</div>
+			</div> -->
 			<div class="package__wrapper">
 				<div class="package-list">
 					<style>
@@ -3041,21 +3009,7 @@
 								Всі перваги в одному пакеті!
 							</p>
 						</div>
-						<!-- <div class="package-list__btn__toggle">
-							<div class="package-list__btn__body">
-								
-							</div>
-
-							<div class="package-list__btn__arrow">
-								<svg width="37" height="21" viewBox="0 0 37 21" fill="none"
-									xmlns="http://www.w3.org/2000/svg">
-									<path d="M18.5 21L0.746477 4.70468e-07L36.2535 3.57459e-06L18.5 21Z" fill="white">
-									</path>
-
-
-								</svg>
-							</div>
-						</div> -->
+						
 
 					</div>
 
@@ -3065,20 +3019,8 @@
 			</div>
 		</div>
 
-		<!-- <div class="package-way package-way-3" style="display: block;">
-			<div class="_container">
-				
-			</div>
-		</div> -->
+	
 		<div class="package-way__wrapper">
-
-			<div class="package-way__title__container title__container">
-				<h2 style="margin-top: 30px;" class="title package-way__title wow fadeInUp" data-wow-duration=".3s"
-					data-wow-delay=".1s">
-					ЯК ПРАЦЮЄ ПАКЕТ «Під Ключ» </h2>
-			</div>
-
-
 			<div class="package-way-list">
 				<style>
 					.package-way-list__text>p {
@@ -3088,7 +3030,7 @@
 
 				<div class="package-way-list__item _visible-way-item _visible-prev-way-item">
 					<div class="package-way-list__text">
-						<p>
+						<p class="font">
 							Розробка 3-х концептуальних рішень </p>
 					</div>
 					<div class="package-way-list__circle">
@@ -3103,7 +3045,7 @@
 
 				<div class="package-way-list__item _visible-way-item _visible-prev-way-item">
 					<div class="package-way-list__text">
-						<p>
+						<p class="font">
 							Затвердження концепції та укладання договору</p>
 					</div>
 					<div class="package-way-list__circle">
@@ -3118,7 +3060,7 @@
 
 				<div class="package-way-list__item _visible-way-item _visible-prev-way-item">
 					<div class="package-way-list__text">
-						<p>
+						<p class="font">
 							Розробка робочого проекту з детальною спеціфікацією </p>
 					</div>
 					<div class="package-way-list__circle">
@@ -3133,7 +3075,7 @@
 
 				<div class="package-way-list__item _visible-way-item _visible-prev-way-item">
 					<div class="package-way-list__text">
-						<p>
+						<p class="font">
 							Підбір та закупівля обладнання та матеріалів </p>
 					</div>
 					<div class="package-way-list__circle">
@@ -3148,13 +3090,13 @@
 
 				<div class="package-way-list__item _visible-way-item _visible-prev-way-item">
 					<div class="package-way-list__text">
-						<p>
+						<p class="font">
 							Монтажні та пусконалагоджувальні роботи </p>
 					</div>
 					<div class="package-way-list__circle">
 						<div class="package-way-list__bg"></div>
 						<div class="package-way-list__num">
-							<p>
+							<p class="font">
 								5 </p>
 						</div>
 					</div>
@@ -3289,7 +3231,7 @@
 
 					.form_cont {
 						backdrop-filter: blur(3px);
-						background-color: rgba(7, 63, 43, 0.4);
+						background-color: rgba(255, 255, 255, 0.6);
 						padding: 30px;
 						border-radius: 3px;
 						margin: 0 auto;
@@ -3474,12 +3416,7 @@
 
 	</script> -->
 	<style>
-		@media (max-width: 455px) {
-			.project_btns {
-				grid-template-columns: 1fr;
-				gap: 40px;
-			}
-		}
+		
 
 		@media (max-width: 805px) {
 			.calculation-form {

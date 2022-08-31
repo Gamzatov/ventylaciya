@@ -272,6 +272,7 @@ body._lock {
 .taxes_grid {
   display: grid;
   margin: 0 auto;
+  max-width: 900px;
   grid-template-columns: 1fr 1fr 1fr;
 }
 .list_item > p {
@@ -279,7 +280,7 @@ body._lock {
 }
 .what_we_give {
   max-width: 1240px;
-  margin: 30px auto;
+  margin: 0px auto;
 }
 .eco {
   background: #a4c2f4;
@@ -301,24 +302,24 @@ body._lock {
 
 section,
 .package-way {
-  padding: 60px 0;
+  padding: 20px 0;
 }
 @media screen and (max-width: 1020px) {
   section,
   .package-way {
-    padding: 80px 0;
+    padding: 20px 0;
   }
 }
 @media screen and (max-width: 770px) {
   section,
   .package-way {
-    padding: 70px 0;
+    padding: 30px 0;
   }
 }
 @media screen and (max-width: 520px) {
   section,
   .package-way {
-    padding: 55px 0;
+    padding: 30px 0;
   }
 }
 
@@ -807,18 +808,8 @@ form input[type="submit"]:active {
     font-size: 17px;
   }
 }
-@media screen and (max-width: 500px) {
-  .subtitle {
-    font-size: 14px;
-    line-height: 14px;
-  }
-}
-@media screen and (max-width: 390px) {
-  .subtitle {
-    font-size: 13px;
-    line-height: 14px;
-  }
-}
+
+
 
 input[type="number"] {
   -webkit-appearance: none;
@@ -1884,7 +1875,7 @@ select::placeholder {
 }
 
 .economy {
-  background-color: #f4f4f4;
+  background-color: #fff;
 }
 .economy__wrapper {
   display: -webkit-box;
@@ -1913,7 +1904,7 @@ select::placeholder {
   -ms-flex-pack: justify;
   justify-content: space-between;
   width: 100%;
-  margin-bottom: 117px;
+  margin-bottom: 37px;
 }
 @media screen and (max-width: 1020px) {
   .economy__main__content {
@@ -2020,7 +2011,7 @@ select::placeholder {
 .economy-list__item {
   display: -webkit-box;
   display: -ms-flexbox;
-  background-color: #fff;
+  background-color: #f4f4f4;
   padding: 12px;
   border-radius: 3px;
   height: 200px;
@@ -2748,7 +2739,7 @@ select::placeholder {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  height: 400px;
+  height: 250px;
 }
 @media screen and (max-width: 1320px) {
   .package-list__info {
@@ -2939,7 +2930,7 @@ select::placeholder {
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 }
 @media screen and (max-width: 1020px) {
   .package-way-list__item {
@@ -3061,10 +3052,10 @@ select::placeholder {
 .package-way-list__circle::before {
   content: "";
   position: absolute;
-  bottom: -60px;
+  bottom: -15px;
   left: 50%;
   width: 3px;
-  height: 60px;
+  height: 30px;
   z-index: 1;
   background-color: #151515;
   -webkit-transform: scale(0) translate(0, -100%);
@@ -3084,7 +3075,7 @@ select::placeholder {
   top: 0;
   left: 0;
   border-radius: 50%;
-  background-color: #151515;
+  background-color: #a0c809;
   -webkit-transition: -webkit-transform 0.2s ease 0.4s;
   transition: -webkit-transform 0.2s ease 0.4s;
   transition: transform 0.2s ease 0.4s;
@@ -3097,7 +3088,7 @@ select::placeholder {
   padding-left: 45px;
 }
 .gallery {
-  background: url("../bg-light-blue-wIEu.png");
+  /* background: url("../bg-light-blue-wIEu.png"); */
   background-size: cover;
 }
 .package-way-list__num {
@@ -3149,21 +3140,21 @@ select::placeholder {
   background-color: #f9f9f9;
   position: relative;
   overflow: hidden;
-  padding-bottom: 50px;
+  /* padding-bottom: 50px; */
 }
 @media screen and (max-width: 1760px) {
   .calculation {
-    padding-bottom: 50px;
+    /* padding-bottom: 50px; */
   }
 }
 @media screen and (max-width: 1140px) {
   .calculation {
-    padding-bottom: 50px;
+    /* padding-bottom: 50px; */
   }
 }
 @media screen and (max-width: 1020px) {
   .calculation {
-    padding-bottom: 40px;
+    /* padding-bottom: 40px; */
   }
 }
 
@@ -4988,7 +4979,7 @@ h3 {
   padding-left: 30px;
   padding-right: 30px;
   /* max-width: 1240px; */
-  background-color: #e5e9ef;
+  /* background-color: #e5e9ef; */
   margin: 0 auto;
 }
 
@@ -5050,11 +5041,15 @@ h3 {
   width: 30%;
 }
 .small_btn {
-  padding: 10px 15px;
+  padding: 20px;
+  display: block;
   background: linear-gradient(135deg, #a0c809, #8bbf19, #77b623, #63ad2b, #50a431, #3d9a35, #279039, #09863b);
   transition: .3s;
+  margin-top: 20px;
+  max-width: 228px;
+  margin: 0 auto;
   color: #fff;
-  border-radius: 3px;
+  text-align: center;
 }
 .small_btn:hover {
   background: linear-gradient(135deg, #09863b, #279039, #3d9a35, #50a431, #63ad2b, #77b623, #8bbf19, #a0c809);
@@ -5371,7 +5366,6 @@ img {
   background-size: cover !important;
   padding-right: 30px;
   background: url("./bg-light-blue-wIEu.png");
-  padding-bottom: 166px;
 }
 
 .what_we_do > h2 {
@@ -5730,9 +5724,7 @@ h3 {
 .text:first-child {
   animation: slide 12s infinite;
 }
-.proj {
-  text-align: left;
-}
+
 .pop_up {
   position: fixed;
   width: 100% !important;
@@ -6250,6 +6242,7 @@ h3 {
     padding: 0;
   }
   .taxes_grid{
+    max-width: 900px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
   }
@@ -6391,7 +6384,6 @@ h3 {
   background-size: cover !important;
   padding-right: 30px;
   background: url('./bg-light-blue-wIEu.png');
-  padding-bottom: 76px;
 }
 
 .what_we_do>h2 {
@@ -6613,7 +6605,7 @@ h3 {
   .poster {
     width: 100%;
     border-radius: 3px;
-    margin: 60px auto;
+    margin: 80px auto;
   }
 
   .inner_text {
@@ -6801,9 +6793,15 @@ h3 {
   top:-65px;
 }
 .third_sec{
-  top: -114px;
+  top: -130px;
   color: #111;
 }
+.counter {
+  color: #0693e3;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
 @media(max-width:762px) {
   .poster_grid {
     flex-direction: column;
@@ -6811,6 +6809,12 @@ h3 {
   .inner_text_two{
     max-width: 120px;
   }
+.mob_int{
+  font-size: 14px;
+}
+.counter{
+  font-size: 18px;
+}
 
 
   .package-list__item,
@@ -6958,5 +6962,11 @@ h3 {
   .ticker span {
     float: left;
     width: 35%;
+  }
+}
+@media(max-width:340px){
+  .head_title_mob,
+  .mob_font{
+    font-size: 27px;
   }
 }
