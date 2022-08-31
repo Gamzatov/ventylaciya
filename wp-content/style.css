@@ -4918,7 +4918,7 @@ textarea {
 
 p {
   font-size: 16px;
-  line-height: 20px;
+  line-height: 100%;
 }
 
 h3 {
