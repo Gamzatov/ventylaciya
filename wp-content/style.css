@@ -38,7 +38,7 @@ p {
   /* font-weight: 300; */
 }
 .logo_aditional {
-  font-family: "Caveat", cursive;
+  font-family: "Caveat", cursive !important; 
   color: red;
 }
 .grid_item_system {
@@ -916,7 +916,7 @@ select::placeholder {
   gap: 10px;
 }
 .logo_aditional {
-  font-size: 20px;
+  font-size: 30px;
 }
 .header__logo__mob {
   display: none;
