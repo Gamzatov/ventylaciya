@@ -5426,7 +5426,7 @@ img {
 .poster_grid {
   display: flex;
   max-width: 1150px;
-  margin: 0 auto;
+  margin-top: 90px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
@@ -6442,12 +6442,6 @@ h3 {
   background: #fff;
 }
 
-.poster_grid {
-  display: flex;
-  max-width: 1150px;
-  margin: 0 auto;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-}
 
 .one {
   background: url('../assets/img/list-two/concept.jpg');
@@ -6661,6 +6655,10 @@ h3 {
   z-index: 3;
   width: 100%;
 }
+.posterT:hover .second_sec{
+  top: 20px;
+
+}
 .posterT:hover .inner_text_two {
   color: #fff;
   font-size: 20px;
@@ -6670,12 +6668,7 @@ h3 {
   background: #fff;
 }
 
-.poster_grid {
-  display: flex;
-  max-width: 1150px;
-  margin: 0 auto;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-}
+
 .descr>p {
   font-size: 20px;
 }
@@ -6788,6 +6781,9 @@ h3 {
 .mob_contain_text {
   margin-top: 20px;
   margin-bottom: 20px;
+}
+.second_sec{
+  top:-50px;
 }
 @media(max-width:762px) {
   .poster_grid {
