@@ -6949,7 +6949,8 @@ h3 {
 .ticker div {
   display: inline-block;
   width: 200%;
-  height: 25px;
+  padding-top: 3px;
+  height: 30px;
   position: absolute;
   overflow: hidden;
   animation: ticker 15s linear infinite;
@@ -6957,6 +6958,7 @@ h3 {
 .ticker span {
   float: left;
   max-width: 69%;
+  text-transform: uppercase;
 }
 @keyframes ticker {
   0% { left: 0; }
