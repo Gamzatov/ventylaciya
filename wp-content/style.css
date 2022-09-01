@@ -6000,7 +6000,7 @@ h3 {
 .accordion-body__contents {
   /* padding: 1.5em 1.5em; */
   font-size: 0.85em;
-  height: 250px;
+  height: 100%;
 }
 
 .accordion__item.active:last-child .accordion-header {
