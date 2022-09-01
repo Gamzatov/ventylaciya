@@ -5985,11 +5985,6 @@ h3 {
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
 
-.accordion-header:hover {
-  background: #09863b;
-  position: relative;
-  z-index: 5;
-}
 
 .accordion-body {
   background: #fcfcfc;
@@ -7009,11 +7004,6 @@ h3 {
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
 
-.accordion-header:hover {
-  background: #00d084;
-  position: relative;
-  z-index: 5;
-}
 
 .accordion-body {
   background: #fcfcfc;
