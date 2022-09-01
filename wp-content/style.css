@@ -6016,7 +6016,9 @@ h3 {
   /* transition: 0.3s all; */
   transform: rotate(0deg);
 }
-
+.mob_int{
+  font-weight: bold;
+}
 .accordion__item.active > .accordion-header:after {
   transform: rotate(-180deg);
 }
