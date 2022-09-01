@@ -295,7 +295,7 @@
 </head>
 
 <body class="home page-template-default page page-id-2 wp-custom-logo">
-	<div class="attention">
+	<div class="attention attention_descktop ">
 		<div class="attention_flex">
 			<p style="color: #00FF00;">
 				АКЦІЯ МІСЯЦЯ
@@ -303,7 +303,7 @@
 
 		</div>
 		<div class="share_text">
-			<p style="text-align: right;">
+			<p>
 				ТЕПЛОВИЙ НАСОС Cooper&Hunter CH-S09FTXN-NG
 			</p>
 		</div>
@@ -328,6 +328,51 @@
 		</div>
 	</div>
 
+	<div class="accordion js-accordion mob_attention">
+		<div class="accordion__item js-accordion-item">
+			<div class="accordion-header js-accordion-header">Акція Місяця</div>
+			<div class="accordion-body js-accordion-body">
+				<div class="accordion-body__contents cond">
+					<div class="attention">
+						<div class="attention_flex">
+							<p style="color: #00FF00;">
+								АКЦІЯ МІСЯЦЯ
+							</p>
+						</div>
+						<div class="share_text">
+							<p >
+								ТЕПЛОВИЙ НАСОС Cooper&Hunter CH-S09FTXN-NG
+							</p>
+						</div>
+						<div class="share_text">
+							<p style="color: #00FF00; text-align:center;">
+								27000 грн + монтаж 1000 грн
+							</p>
+							<p class="small_text_share">
+								( при стандартному монтажі з довжиною траси до 3-х метрів)
+							</p>
+						</div>
+						<div class="share_img_wrapper">
+							<div class="share_img">
+								<img src="./assets/share/1.png" alt="">
+							</div>
+							<div class="share_img">
+								<img src="./assets/share/2.png" alt="">
+							</div>
+							<div class="share_img">
+								<img src="./assets/share/3.png" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div </div>
+		</div>
+	</div>
+	<style>
+
+
+	</style>
 	<header class="header">
 		<div class="_container">
 			<div class="header__wrapper">
@@ -465,17 +510,32 @@
 			font-weight: bold;
 			font-size: 24px;
 		}
-		.attention{
+
+		.attention {
 			display: grid;
 			align-items: center;
 			grid-template-columns: 1fr 2fr 1fr 1fr;
 		}
-		.share_img_wrapper{
+
+		.share_img_wrapper {
 			display: flex;
 			column-gap: 10px;
 		}
+
+		@media(max-width:762px) {
+			.attention {
+				grid-template-columns: 1fr;
+				position: relative;
+				z-index: 2;
+			}
+
+			.share_img_wrapper {
+				/* flex-direction: column; */
+				align-items: center;
+			}
+		}
 	</style>
-	
+
 	<style>
 		.share_img>img {
 			max-width: 200px;
@@ -3048,7 +3108,22 @@
 			width: 50%;
 			background-color: #fff;
 		}
+		.mob_attention{
+			display: none;
+		}
+		.share_text > p{
+			font-size: 14px;
+		}
+		@media(max-width:762px) {
+			.mob_attention {
+				display: block;
+			}
+			.attention_descktop{
+				display: none;
+			}
+		}
 	</style>
+
 </body>
 
 </html>
