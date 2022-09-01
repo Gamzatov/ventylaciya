@@ -295,7 +295,38 @@
 </head>
 
 <body class="home page-template-default page page-id-2 wp-custom-logo">
+	<div class="attention">
+		<div class="attention_flex">
+			<p style="color: #00FF00;">
+				АКЦІЯ МІСЯЦЯ
+			</p>
 
+		</div>
+		<div class="share_text">
+			<p style="text-align: right;">
+				ТЕПЛОВИЙ НАСОС Cooper&Hunter CH-S09FTXN-NG
+			</p>
+		</div>
+		<div class="share_text">
+			<p style="color: #00FF00; text-align:center;">
+				27000 грн + монтаж 1000 грн
+			</p>
+			<p class="small_text_share">
+				( при стандартному монтажі з довжиною траси до 3-х метрів)
+			</p>
+		</div>
+		<div class="share_img_wrapper">
+			<div class="share_img">
+				<img src="./assets/share/1.png" alt="">
+			</div>
+			<div class="share_img">
+				<img src="./assets/share/2.png" alt="">
+			</div>
+			<div class="share_img">
+				<img src="./assets/share/3.png" alt="">
+			</div>
+		</div>
+	</div>
 
 	<header class="header">
 		<div class="_container">
@@ -434,21 +465,25 @@
 			font-weight: bold;
 			font-size: 24px;
 		}
+		.attention{
+			display: grid;
+			align-items: center;
+			grid-template-columns: 1fr 2fr 1fr 1fr;
+		}
+		.share_img_wrapper{
+			display: flex;
+			column-gap: 10px;
+		}
 	</style>
-	<!-- <div class="attention">
-		<div class="attention_flex">
-			<p>
-				Акція! Знижка на монтажні роботи
-			</p>
-			<p>
-				Залишилось 5 діб
-			</p>
-		</div>
-	</div> -->
+	
+	<style>
+		.share_img>img {
+			max-width: 200px;
+			height: 80px;
+		}
+	</style>
 	<section class="main">
-		<!-- <video playsinline autoplay muted loop poster="./assets/preback.png">
-			<source src="./assets/backvid.mp4" type="video/mp4">
-		</video> -->
+
 		<div class="main__blur">
 		</div>
 		<div class="main_gradient"></div>
@@ -2324,7 +2359,7 @@
 											<div class="proj_name">
 												<p>
 													"Виробничо-складські та адміністративно-побутові приміщення"
-													
+
 												</p>
 											</div>
 											<div class="proj_kind_wrapper">
@@ -2650,7 +2685,7 @@
 					<!-- <h2 class="title audit__title wow fadeInUp" data-wow-duration=".3s" data-wow-delay=".1s">
 						ПОТРІБНА ДОПОМОГА? </h2> -->
 					<p class="subtitle audit__subtitle wow fadeInUp" data-wow-duration=".3s" data-wow-delay=".3s">
-						Залишіть заявку на консультацію  і ми
+						Залишіть заявку на консультацію і ми
 						зв'яжемося з
 						вами найближчим часом. </p>
 				</div>

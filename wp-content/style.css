@@ -889,16 +889,16 @@ select::placeholder {
 }
 
 .header {
-  position: absolute;
+  /* position: absolute; */
   top: 0;
   left: 0;
   width: 100%;
-  padding: 20px 0 0 0;
+  /* padding: 20px 0 0 0; */
   z-index: 9;
 }
 .header__wrapper {
   color: #151515;
-  margin-top: 20px;
+  margin-top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1194,7 +1194,7 @@ select::placeholder {
   background-repeat: no-repeat;
   background-position: 100% 0;
   background-size: cover;
-  padding: 100px 0 15px 0;
+  padding: 0px 0 15px 0;
 }
 @media screen and (max-width: 900px) {
   .main {
@@ -4844,7 +4844,7 @@ textarea {
 .attention {
   padding: 5px;
   color: #fff;
-  background-color: #cf2e2e;
+  background-color: #4285f4;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -6075,13 +6075,7 @@ h3 {
   }
 }
 
-.attention {
-  padding: 5px;
-  color: #fff;
-  background-color: #cf2e2e;
-  padding-left: 10px;
-  padding-right: 10px;
-}
+
 
 .attention_flex {
   max-width: 1240px;
@@ -6988,4 +6982,8 @@ h3 {
   background: linear-gradient(135deg, #09863b, #279039, #3d9a35, #50a431, #63ad2b, #77b623, #8bbf19, #a0c809);
   color: #fff;
   border: none;
+}
+.small_text_share{
+  font-size: 12px;
+  text-align: center;
 }
