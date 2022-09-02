@@ -10,11 +10,12 @@
 }
 .head_title_mob {
   font-family: "Comfortaa", cursive;
-  font-size: 4rem;
+  font-size: 6rem;
   line-height: 100%;
 }
 .head_title_mob_subtitle {
   font-size: 2.5rem;
+  margin-top: -50px;
   line-height: 100%;
 }
 .mob_font {
@@ -6095,8 +6096,7 @@ h3 {
 }
 .head_title_mob_subtitle {
   font-family: "Comfortaa", cursive !important;
-  margin-top: 10px;
-  text-align: left;
+  text-align: right;
   color: #151515;
 }
 .mob_font {
@@ -6253,7 +6253,8 @@ h3 {
   }
   .head_title_mob_subtitle {
     font-size: 24px;
-    margin-top: 0px;
+    text-align: left;
+    margin-top: 5px;
   }
 }
 @media (max-width: 400px) {
