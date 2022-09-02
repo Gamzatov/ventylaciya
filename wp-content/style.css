@@ -6267,7 +6267,7 @@ h3 {
   .mobile_sub_text{
     max-width: 200px;
     margin-left: auto;
-    margin-right: 0;
+    margin-right: 6px;
     /* margin-top: -25px; */
   }
 }
