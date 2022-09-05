@@ -1554,10 +1554,19 @@ select::placeholder {
   .set-task__bg {
     bottom: -16%;
   }
+  .mobile_sub_text{
+    /* margin-top: 50px; */
+  }
+  .head_title_mob{
+    font-size: 5rem;
+  }
 }
 @media screen and (max-width: 660px) {
   .set-task__bg {
     bottom: -12%;
+  }
+  .sub_head_title_wrapepr{
+    flex-direction: column;
   }
 }
 @media screen and (max-width: 500px) {
