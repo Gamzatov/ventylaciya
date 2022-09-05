@@ -1566,7 +1566,7 @@ select::placeholder {
     bottom: -12%;
   }
   .sub_head_title_wrapepr{
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 }
 @media screen and (max-width: 500px) {
